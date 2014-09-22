@@ -1,0 +1,14 @@
+TODOS:
+Ana: coloquei na meta4 uns diagramas de actividades não faço ideia se é o que se quer
+
+-A tua implementaçao de multas está comentada pk tava-me a dar um bug k n deixava compilar
+
+-Implementar coordenador
+O coordenador da biblioteca deverá ter acesso a um relatório com o número de livros
+emprestados/devolvidos e com o custo de aquisição de livros.
+(^^^ o relatorio esta feito e completei o saveData para o relatorio...mas ainda vou corrigir uma coisita no menuCoordenador )
+
+
+-Fazer outros diagramas
+
+neti isto a guardar tb a lista de devoluçoes

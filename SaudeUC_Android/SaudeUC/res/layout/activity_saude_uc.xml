@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bRegister"
+        android:onClick="ConnectOnClick"
+        android:text="Sair" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bExit"
+        android:layout_alignParentLeft="true"
+        android:onClick="ConnectOnClick"
+        android:text="Registar" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bRegister"
+        android:onClick="ConnectOnClick"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="Dados de Login"
+        android:textSize="@dimen/defSize"
+        tools:context=".SaudeUC" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/password" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

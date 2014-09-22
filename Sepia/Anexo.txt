@@ -1,0 +1,16 @@
+FOram utilizados os ficheiros:
+
+BD_Cidades.dat
+BD_Estradas.dat
+BD_Viaturas.dat
+percursos_mais_Curtos.dat
+percursos_mais_Rapidos.dat
+percursos_mais_Turisticos.dat
+
+Estes ficheiros sao carregados para listas no inicio da execuçao do programa e salvos no fim do programa.
+
+Vao em base de dados 3 exemplos de percurso:
+
+Coimbra - Braga  -> curto
+Coimbra - Braga  -> rapido
+Coimbra - Braga  -> turistico
