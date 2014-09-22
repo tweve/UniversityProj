@@ -1,0 +1,72 @@
+% ATD - Trabalho Prático Nº 3
+
+% Ex. 1
+
+%1.1 - Relatório
+
+%1.2
+t0 = 2;
+passo = t0 / 500;
+t = 0:passo:t0-passo;
+
+    xt = -1 + 3*sin( 20*pi*t ) + 2*sin( 12*pi*t + pi/4 ).*cos( 21*pi*t );
+   
+ts = 1/35;
+n = 0:t0/ts-1;
+
+     xn = -1 + 3*sin( (20*pi/35)*n ) + 2*sin( (12*pi/35)*n + pi/4 ).*cos( (21*pi/35)*n );
+
+ plot(t,xt,'-', n*ts,xn,'o');
+ title('Sobreposiçao das amostras do sinal com o sinal em tempo contínuo');
+ legend('Sinal contínuo','Sinal amostrado');
+
+
+ 
+ %1.3
+ 
+    N = t0/ts;
+    n = 0:N-1;
+    
+    x = fftshift(fft(xn));
+    
+    if (mod(N,2)==0),
+        omega = linspace(-pi,pi-(2*pi/N),N)
+       
+    else
+        omega = linspace(-pi+(pi/N), pi-(pi/N),N)
+    end
+   
+    figure(2); 
+    stem(omega,abs(x));
+    title('Transformada de Fourier Discreta (DFT) em módulo');
+    figure(3);
+    stem(omega, angle(x))
+    title('Transformada de Fourier Discreta (DFT) em fase');
+    
+%1.4
+    cm = x / N;
+    
+%1.5
+    
+    Cm = [abs(cm(N/2+1)) 2*abs(cm(N/2+2:N)) ];
+    Tetam = angle(cm(N/2+1:N));
+    
+    figure(4)
+    hold on;
+    subplot(2,1,1)
+        plot(Cm);
+        title('Cm trigonométricos')
+    subplot(2,1,2)
+        plot(Tetam)
+        title('Tetam trigonométricos')
+        
+        
+%1.6
+    
+    m_max = N/2-1;
+    sinal = criaSinal(Cm,Tetam,m_max, t0, n*ts);
+    figure(5);
+    plot(t, xt, '-g', n*ts, sinal, 'or');
+    title('Sobreposição de Sinais')
+    legend('Sinal Original', 'Sinal Reconstruído');
+    

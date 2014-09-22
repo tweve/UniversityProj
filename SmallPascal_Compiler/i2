@@ -1,0 +1,16 @@
+program teste;
+var 
+	a : integer;
+	b : real;
+	c : boolean;
+
+	ara : array[1..9999999999999] of integer;
+	arb : array[1..10] of real;
+	arc : array[1..10] of boolean;
+
+
+
+begin
+
+
+end.

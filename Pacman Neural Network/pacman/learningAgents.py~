@@ -1,0 +1,225 @@
+"""
+Introducao a Inteligencia Artificial
+Redes Neuronais
+
+Autores:
+- Goncalo Silva Pereira              2009111643
+- Igor Nelson Garrido da Cruz        2009111924
+- Maria Rita Nogueira                2009115231
+
+Algoritmo de retropogacao baseado na implementacao BPNN de:
+    Neil Schemenauer <nas@arctrix.com>
+"""
+
+from game import Agent
+
+from random import *
+import math
+
+from util import *
+
+def rand(a, b):
+    return (b-a)* random.random() + a
+
+def constroiMatriz(Y, X, fill=0.0):
+    m = []
+    for i in range(Y):
+        m.append([fill]*X)
+    return m
+
+
+def sigmoid(x):
+    ''' Devolve a sigmoid de um determinado input '''        
+    return math.tanh(x)
+
+def dsigmoid(y):
+    ''' Devolve derivada da sigmoid'''  
+    return 1.0 - y**2
+
+class NeuralNetworkAgent(Agent):
+    def __init__(self):
+
+        """ cria a rede neuronal """ 
+
+        # define o numero de neuronios em cada camada
+        self.camadaInput = 20+1
+        self.camadaEscondida = 5
+        self.camadaOutput = 5
+
+        # define activacao dos neuronios         
+        self.activacaoInput = [1.0]*self.camadaInput
+        self.activacaoEscondida = [1.0]*self.camadaEscondida
+        self.activacaoOutput = [1.0]*self.camadaOutput
+
+
+        # cria a matriz de pesos
+        self.pesosInput = constroiMatriz(self.camadaInput, self.camadaEscondida)
+        self.pesosOutput = constroiMatriz(self.camadaEscondida, self.camadaOutput)
+
+        # atribui valores aleatorios aos pesos iniciais
+        for i in range(self.camadaInput):
+            for j in range(self.camadaEscondida):
+                self.pesosInput[i][j] = rand(-0.2,0.2)
+        for j in range(self.camadaEscondida):
+            for k in range(self.camadaOutput):
+                self.pesosOutput[j][k] = rand(-2.0, 2.0)
+
+        self.inputchange = constroiMatriz(self.camadaInput, self.camadaEscondida)
+        self.outputchange = constroiMatriz(self.camadaEscondida, self.camadaOutput)
+        
+        files = loadFilesUntil(1)
+        for i in range (1):
+	        self.trainNeuralNetwork(files[i])
+
+    def trainNeuralNetwork(self, case):
+    
+        ''' Treina a rede Neuronal '''
+        # iteracoes
+        iterations = 1
+        # taxa de aprendizagem
+        learningrate = 0.4
+        # TODO: saber o que e o momentum        
+        momentum = 0.3
+    
+        for i in range(iterations):
+            error = 0.0
+                
+            for p in case:
+                inputs = p[0]
+                targets = p[1]
+                self.update(inputs)
+                error = error + self.retroPropagacao(targets, learningrate, momentum)
+           
+            print('error %-.5f' % error)
+
+
+
+    def update(self,inputs):
+        """ Actualiza a rede neuronal """
+        
+        # verifica se o tamanho do input e igual ao numero de entradas na rede
+        # -1, pois existe uma entrada sempre a 1 para todos os neuronios
+        if len(inputs) != self.camadaInput-1:
+            raise ValueError('Wrong number of inputs, should have %i inputs.' % self.numinput)
+        
+        # calcula os outputs da rede neuronal
+        
+        # activa os neuronios da camada de input, -1 -> ignora a entrada que fica sempre a 1
+        for i in range(self.camadaInput-1):
+            self.activacaoInput[i] = inputs[i]
+        
+        # activa neuronios na camada escondida
+        for h in range(self.camadaEscondida):
+            sum = 0.0
+            for i in range(self.camadaInput):
+                sum = sum + self.activacaoInput[i] * self.pesosInput[i][h]
+                self.activacaoEscondida[h] = sigmoid(sum)
+        
+        # activa neuronios da camada de output
+        for o in range(self.camadaOutput):
+            sum = 0.0
+            for h in range(self.camadaEscondida):
+                sum = sum + self.activacaoEscondida[h] * self.pesosOutput[h][o]
+                self.activacaoOutput[o] = sigmoid(sum)
+        
+        return self.activacaoOutput[:]
+    
+    def retroPropagacao(self, targets, learningrate, momentum):
+        """ Algoritmo de Retropropagacao """
+        
+            # verifica se o numero de outputs e igual ao numero de neurorios de saida
+        if len(targets) != self.camadaOutput:
+            raise ValueError('Wrong number of target values.')
+    
+        # calcula erro nos neuronios de output
+        output_deltas = [0.0] * self.camadaOutput
+        for k in range(self.camadaOutput):
+            error = targets[k]-self.activacaoOutput[k]
+            output_deltas[k] = dsigmoid(self.activacaoOutput[k]) * error
+    
+        # calcula o erro nos neuronios da camada escondida
+        hidden_deltas = [0.0] * self.camadaEscondida
+        for j in range(self.camadaEscondida):
+            error = 0.0
+            for k in range(self.camadaOutput):
+                error = error + output_deltas[k]*self.pesosOutput[j][k]
+                hidden_deltas[j] = dsigmoid(self.activacaoEscondida[j]) * error
+    
+        # actualiza pesos na camada de output
+        for j in range(self.camadaEscondida):
+            for k in range(self.camadaOutput):
+                change = output_deltas[k]*self.activacaoEscondida[j]
+                self.pesosOutput[j][k] += learningrate*change + momentum*self.outputchange[j][k]
+                self.outputchange[j][k] = change
+        
+        # actualiza os pesos na camada de input
+        for i in range(self.camadaInput):
+            for j in range(self.camadaEscondida):
+                change = hidden_deltas[j]*self.activacaoInput[i]
+                self.pesosInput[i][j] += learningrate*change + momentum*self.inputchange[i][j]
+                self.inputchange[i][j] = change
+    
+        # calcula o erro
+        error = 0.0
+        for k in range(len(targets)):
+            error = error + 0.5*(targets[k]-self.activacaoOutput[k])**2
+        return error
+
+
+    
+    def getDirection(self, input, state):
+        print(input);
+        from game import Directions
+        
+        if self.compareList(input,[1, 0, 0, 0, 0]) and Directions.NORTH in state.getLegalActions():
+            return Directions.NORTH
+        
+        if self.compareList(input,[0, 1, 0, 0, 0]) and Directions.SOUTH in state.getLegalActions():
+            return Directions.SOUTH
+        
+        if self.compareList(input,[0, 0, 1, 0, 0]) and Directions.EAST in state.getLegalActions():
+            return Directions.EAST
+        
+        if self.compareList(input,[0, 0, 0, 1, 0]) and Directions.WEST in state.getLegalActions():
+            return Directions.WEST
+        
+        if self.compareList(input,[0, 0, 0, 0, 1]) and Directions.STOP in state.getLegalActions():
+            return Directions.STOP
+        
+        return Directions.STOP
+    
+    
+    def translateActionList(self, action):
+	    valor = max(action)
+	    index = 0
+	    for i in action:
+		    if i == valor:
+			    break
+		    index += 1
+	    if index == 0:
+		    return [1,0,0,0,0]
+	    elif index == 1:
+		    return [0,1,0,0,0]
+	    elif index == 2:
+		    return [0,0,1,0,0]
+	    elif index == 3:
+		    return [0,0,0,1,0]
+	    else:
+		    return [0,0,0,0,1]
+	    
+    
+    
+    
+    def compareList(self, inputA, inputB):
+        for i in range (len(inputA)):
+            if (inputA[i] != inputB[i]):
+                return False
+        return True
+    
+    def getAction(self, state):
+
+        inputRedeNeuronal = getStateRepresentation(state)
+        outputRedeNeuronal = self.update(inputRedeNeuronal)
+        
+        return self.getDirection(self.translateActionList(outputRedeNeuronal), state)
+

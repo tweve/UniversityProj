@@ -1,0 +1,26 @@
+
+tt = 0.5;
+f = 800;
+fs = 44100;
+t = (0:1/fs: tt)';
+freq = 11025;
+pos = 1;
+
+for f = 200:100:18000,
+    y = sin (2 * pi * f * t);
+    wavplay(y,fs,'async');
+    
+    y=wavrecord(0.5*fs+1,fs);
+
+%     for k=1:30
+%       dividimos em 30
+
+%        subts=length(y)/30;
+%        suby=y((1+(k-1))*round(subts)):y(k*round(subts));
+%        maximo=max(abs(suby));
+%        maximolocal=maximolocal+maximo;
+%     end
+%     Amp(pos)=aux/30;
+%     pos=pos+1;
+end
+plot(f0,Amp);

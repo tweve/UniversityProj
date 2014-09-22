@@ -1,0 +1,38 @@
+% Igor Nelson Garrido da Cruz
+% Gonçalo Silva Pereira
+
+% ATD Trabalho Prático Nº 4
+
+% % Ex 4
+% % 4.1
+% [x,map]=imread('lenna.jpg','jpeg');
+% [C,S] = WAVEDEC2(x,2,'Haar');
+% figure(1)
+% subplot(2,1,1)
+% plot(C)
+% title('C')
+% subplot(2,1,2)
+% plot(S)
+% title('S')
+% 
+% % 4.2
+% x_r = WAVEREC2(C,S,'Haar');
+% figure(2)
+% IMSHOW(x_r,map);
+% title('Reconstrução')
+
+imagem = imread('lenna.jpg');
+map = colormap;
+wavem = 'haar';
+
+[C,S]= wavedec2(imagem,2,wavem);
+
+CA2 = appcoef (C,S,wavem,2);
+
+[CDH2,CDV2,CDD2]= detcoef2('all',C,S,2);
+[CDH1,CDV1,CDD1]= detcoef2('all',C,S,1);
+
+ncolors = max(imagem);
+
+CA2m = wcodemat(CA2,ncolors)
+C = [[CA2m CDH2m]]

@@ -1,0 +1,31 @@
+program Eratosthenes;
+var ndivisores : integer;
+ j : integer;
+ divi : integer;
+
+begin
+
+	  for  j:= 1 to 1000000 do
+
+
+
+	         begin
+	  
+				
+
+					if j = 1 then
+						writeln(j)
+					else
+						begin
+							 for  divi := 1 to j do
+								 begin
+									if (j mod divi = 0 ) then
+										 ndivisores := ndivisores+1;
+								 end;
+							if (ndivisores = 2) then
+								 writeln(j);
+								
+							ndivisores := 0;
+	            		end;
+	         end;
+end.

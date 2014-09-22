@@ -1,0 +1,8 @@
+program Print19;
+	
+
+begin
+	if (true)then
+		;
+end.
+

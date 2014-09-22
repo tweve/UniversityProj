@@ -1,0 +1,775 @@
+/*
+	Igor Nelson Garrido da Cruz		2009111924	
+	Computação Gráfica 2012
+*/
+
+#include "GL/freeglut.h"
+#include "GL/gl.h"
+#include "RgbImage.h"
+#include "materials.h"
+#include <math.h>
+#include <string.h>
+#include "cube.h"
+#include "canape.h"
+#include "canape_func.h"
+
+
+#define tamanhoJanelaX 1024
+#define tamanhoJanelaY 768
+
+# define PI		3.14159265358979323846	
+
+#define AZUL 0.0, 0.0, 1.0, 1.0
+#define VERMELHO 1.0, 0.0, 0.0, 1.0
+#define AMARELO 1.0, 1.0, 0.0, 1.0
+#define VERDE 0.0, 1.0, 0.0, 1.0
+#define LARANJA 1.0, 0.5, 0.1, 1.0
+#define WHITE 1.0, 1.0, 1.0, 1.0
+#define BLACK 0.0, 0.0, 0.0, 1.0
+#define GRAY 0.9, 0.92, 0.29, 1.0
+
+#define particulasMaximas 1000
+
+GLfloat fov = 40;	// perpectiva
+GLfloat asp = 1;	// perspectiva
+
+
+//------------------------------------------------------------ Tamanhos
+GLfloat floorPosition[]= {0, 0, 0};
+GLfloat larguraChao = 10.0;
+GLfloat comprimentoChao = 16.0;
+GLfloat alturaParede = 6.0;
+GLfloat larguraParede = 0.3;
+GLfloat tam=3.0;
+
+
+
+//------------------------------------------------------------ Observador
+GLfloat  rVisao=22, aVisao=0.33*PI, incVisao=0.1;
+GLfloat  obsP[] ={rVisao*cos(aVisao), 2, rVisao*sin(aVisao)};
+GLfloat  obsD[] ={4.5,1.5,11.0};
+
+//------------------------------------------------------------ Texturas
+GLuint  texture[4];
+GLuint  skybox[6];
+GLuint  agua[1];
+
+RgbImage imag;
+
+float quedaZFonte = 0.00;
+float quedaXFonte = 0.00;
+float forcaFonte = 0.00;
+
+bool luzFonte = true;
+
+//------------------------------------------------------------ Controlo com o rato
+GLfloat mouseX, mouseY;
+bool rotateLeft = false;
+bool rotateRight = false;
+bool zoomIn = false;
+bool zoomOut = false;
+
+
+typedef struct
+{
+  float lifetime;                       // total lifetime of the particle
+  float decay;                          // decay speed of the particle
+  float r,g,b;                          // color values of the particle
+  float xpos,ypos,zpos;                 // position of the particle
+  float xspeed,yspeed,zspeed;           // speed of the particle
+  bool active;                       	// is particle active or not?
+} PARTICLE;
+
+//------------------------------------------------------------ Array de particulas
+PARTICLE particle[particulasMaximas];
+
+float rand_FloatRange(float a, float b)
+{
+	return ((b-a)*((float)rand()/RAND_MAX))+a;
+}
+
+void CreateParticle(int i)
+{
+     particle[i].lifetime= 5;
+     particle[i].decay=0.1;
+     particle[i].r = 0.7;
+     particle[i].g = 0.7;
+     particle[i].b = 1.0;
+     particle[i].xpos= 4.5;
+     particle[i].ypos= 1.0;
+     particle[i].zpos= 11.0;
+
+     particle[i].xspeed = quedaXFonte+rand_FloatRange(-0.015,0.015);
+     particle[i].yspeed = forcaFonte+rand_FloatRange(0.09, 0.13);
+     particle[i].zspeed = quedaZFonte+ rand_FloatRange(-0.015,0.015);
+     particle[i].active = true;
+}
+
+void EvolveParticle()
+{
+   for(int i=0;i<=particulasMaximas;i++){      // evolve the particle parameters
+     particle[i].lifetime-=particle[i].decay;
+     particle[i].xpos+=particle[i].xspeed;
+     particle[i].ypos+=particle[i].yspeed;
+     particle[i].zpos+=particle[i].zspeed;
+		if ( particle[i].ypos>2.0){
+			particle[i].yspeed =0;
+			forcaFonte = 0.0;
+		}
+     particle[i].yspeed-=0.01;
+   }
+}
+
+void initTextures()
+{   
+
+
+	//----------------------------------------- Chao
+	glGenTextures(1, &texture[0]);
+	glBindTexture(GL_TEXTURE_2D, texture[0]);
+	imag.LoadBmpFile("seamlessfloor.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+
+	//----------------------------------------- Relva
+	glGenTextures(1, &texture[1]);
+	glBindTexture(GL_TEXTURE_2D, texture[1]);
+	imag.LoadBmpFile("seamlessgrass.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	//----------------------------------------- Parede
+	glGenTextures(1, &texture[2]);
+	glBindTexture(GL_TEXTURE_2D, texture[2]);
+	imag.LoadBmpFile("seamlesswall.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+		//----------------------------------------- madeira
+	glGenTextures(1, &texture[3]);
+	glBindTexture(GL_TEXTURE_2D, texture[3]);
+	imag.LoadBmpFile("seamlesswood.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+
+	glGenTextures(1, &skybox[0]);
+	glBindTexture(GL_TEXTURE_2D, skybox[0]);
+	imag.LoadBmpFile("frontsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	glGenTextures(1, &skybox[1]);
+	glBindTexture(GL_TEXTURE_2D, skybox[1]);
+	imag.LoadBmpFile("leftsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	glGenTextures(1, &skybox[2]);
+	glBindTexture(GL_TEXTURE_2D, skybox[2]);
+	imag.LoadBmpFile("rightsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	glGenTextures(1, &skybox[3]);
+	glBindTexture(GL_TEXTURE_2D, skybox[3]);
+	imag.LoadBmpFile("backsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	glGenTextures(1, &skybox[4]);
+	glBindTexture(GL_TEXTURE_2D, skybox[4]);
+	imag.LoadBmpFile("topsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+	glGenTextures(1, &skybox[5]);
+	glBindTexture(GL_TEXTURE_2D, skybox[5]);
+	imag.LoadBmpFile("botsh.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+
+	//----------------------------------------- Agua
+	glGenTextures(1, &agua[0]);
+	glBindTexture(GL_TEXTURE_2D, agua[0]);
+	imag.LoadBmpFile("seamlesswater.bmp");
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexImage2D(GL_TEXTURE_2D, 0, 3, 
+	imag.GetNumCols(),
+		imag.GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE,
+		imag.ImageData());
+}
+
+void controloCamera(){
+	if (rotateLeft){
+		aVisao = (aVisao - 0.01) ;
+	}
+	else if (rotateRight){
+		aVisao = (aVisao + 0.01) ;
+	}
+	if (zoomIn){
+		rVisao += 0.1;
+	}
+	else if (zoomOut){
+		rVisao -= 0.1;
+	}
+
+	obsP[0]=rVisao*cos(aVisao);
+	obsP[2]=rVisao*sin(aVisao);
+
+	glutPostRedisplay();	
+}
+
+void init(void)
+{
+	
+	glClearColor(AMARELO);
+	glShadeModel(GL_SMOOTH);
+	initTextures();
+	glEnable(GL_TEXTURE_2D);
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_NORMALIZE);
+	InitMesh();
+
+
+}
+void desenhaRelva(){
+
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[1]);
+
+	glPushMatrix();
+		glTranslatef(floorPosition[0], floorPosition[1]-0.05, floorPosition[2]);
+		
+		glBegin(GL_QUADS);
+
+			glTexCoord2f(0.0f,0.0f); glVertex3i( -90,   0, -90); 
+			glTexCoord2f(100.0f,0.0f); glVertex3i(-90, 0, 90);
+			glTexCoord2f(100.0f,100.0f); glVertex3i(90, 0, 90);
+			glTexCoord2f(0.0f,100.0f); glVertex3i(90, 0, -90);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+
+}
+void desenhaParedeEscadas(){
+	/* Desenha a parede do lado das escadas	*/
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[2]);
+
+	glPushMatrix();
+		
+		glTranslatef(0,alturaParede*0.5,comprimentoChao*0.5);
+		
+		glScalef(larguraParede,alturaParede,comprimentoChao);
+		
+		solidCube(1.0, texture[2]);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+}
+void desenhaSkybox(){
+	// Store the current matrix
+   
+ 
+    // Enable/Disable features
+   /* glPushAttrib(GL_ENABLE_BIT);
+    glEnable(GL_TEXTURE_2D);
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_LIGHTING);
+    glDisable(GL_BLEND);
+ */
+
+	 glEnable(GL_TEXTURE_2D);
+    // Just in case we set all vertices to white.
+    glColor4f(1,1,1,1);
+  	glPushMatrix();
+    // Render the front quad
+    glBindTexture(GL_TEXTURE_2D, skybox[0]);
+
+    glBegin(GL_QUADS);
+		glNormal3f(0,0,1);
+        glTexCoord2f(0.0, 0.0); glVertex3f( 50.0f, -50.0f, -50.0f );
+        glTexCoord2f(1.0, 0.0); glVertex3f( -50.0f, -50.0f, -50.0f );
+        glTexCoord2f(1.0, 1.0); glVertex3f( -50.0f,  50.0f, -50.0f );
+        glTexCoord2f(0.0, 1.0); glVertex3f(  50.0f,  50.0f, -50.0f );
+    glEnd();
+	
+    // Render the left quad
+    glBindTexture(GL_TEXTURE_2D, skybox[1]);
+    glBegin(GL_QUADS);
+		glNormal3f(-1,0,0);
+        glTexCoord2f(0.0, 0.0); glVertex3f(  50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1.0, 0.0); glVertex3f(  50.0f, -50.0f, -50.0f );
+        glTexCoord2f(1.0, 1.0); glVertex3f(  50.0f,  50.0f, -50.0f );
+        glTexCoord2f(0.0, 1.0); glVertex3f(  50.0f,  50.0f,  50.0f );
+    glEnd();
+ 
+    // Render the back quad
+    glBindTexture(GL_TEXTURE_2D, skybox[3]);
+    glBegin(GL_QUADS);
+		glNormal3f(0,0,-1);
+        glTexCoord2f(0, 0); glVertex3f( -50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1, 0); glVertex3f(  50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1, 1); glVertex3f(  50.0f,  50.0f,  50.0f );
+        glTexCoord2f(0, 1); glVertex3f( -50.0f,  50.0f,  50.0f );
+ 
+    glEnd();
+ 
+    // Render the right quad
+    glBindTexture(GL_TEXTURE_2D, skybox[2]);
+    glBegin(GL_QUADS);
+		glNormal3f(1,0,0);
+        glTexCoord2f(0, 0); glVertex3f( -50.0f, -50.0f, -50.0f );
+        glTexCoord2f(1, 0); glVertex3f( -50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1, 1); glVertex3f( -50.0f,  50.0f,  50.0f );
+        glTexCoord2f(0, 1); glVertex3f( -50.0f,  50.0f, -50.0f );
+    glEnd();
+ 
+    // Render the top quad
+    glBindTexture(GL_TEXTURE_2D, skybox[4]);
+    glBegin(GL_QUADS);
+		glNormal3f(0,-1,0);
+        glTexCoord2f(0, 1); glVertex3f( -50.0f,  50.0f, -50.0f );
+        glTexCoord2f(0, 0); glVertex3f( -50.0f,  50.0f,  50.0f );
+        glTexCoord2f(1, 0); glVertex3f(  50.0f,  50.0f,  50.0f );
+        glTexCoord2f(1, 1); glVertex3f(  50.0f,  50.0f, -50.0f );
+    glEnd();
+ 
+    // Render the bottom quad
+    glBindTexture(GL_TEXTURE_2D, skybox[5]);
+    glBegin(GL_QUADS);
+		glNormal3f(0,1,0);
+        glTexCoord2f(0, 0); glVertex3f( -50.0f, -50.0f, -50.0f );
+        glTexCoord2f(0, 1); glVertex3f( -50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1, 1); glVertex3f(  50.0f, -50.0f,  50.0f );
+        glTexCoord2f(1, 0); glVertex3f(  50.0f, -50.0f, -50.0f );
+    glEnd();
+ 
+    // Restore enable bits and matrix
+    glPopAttrib();
+    glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+}
+
+void desenhaFonte(){
+
+
+	
+
+	glPushMatrix();
+
+glTranslatef(4.5,0.9,11);
+	glutSolidSphere(0.2,10,10);
+
+
+	glPopMatrix();
+
+
+	 glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,agua[0]);          // choose particle texture
+	   for (int i=0;i<=particulasMaximas;i++){
+		 if(particle[i].ypos<1.0) particle[i].lifetime=0.0;
+		 if((particle[i].active==true) && (particle[i].lifetime>0.0)){
+		   glColor3f(particle[i].r,particle[i].g,particle[i].b);
+		   glBegin(GL_TRIANGLE_STRIP);
+			 glNormal3f(1,0,0);
+		     glTexCoord2f(0.0,1.0); glVertex3f(particle[i].xpos+0.0, particle[i].ypos+0.008, particle[i].zpos+0.008);     // top    right
+		     glTexCoord2f(0.0,0.0); glVertex3f(particle[i].xpos+0.0, particle[i].ypos+0.008, particle[i].zpos-0.008);     // top    left
+		     glTexCoord2f(1.0,1.0); glVertex3f(particle[i].xpos+0.0, particle[i].ypos-0.008, particle[i].zpos+0.008);     // bottom right
+		     glTexCoord2f(1.0,0.0); glVertex3f(particle[i].xpos-0.005, particle[i].ypos-0.008, particle[i].zpos-0.008);     // bottom left
+		   glEnd();
+		  } else CreateParticle(i);
+		}
+	  EvolveParticle();
+	glDisable(GL_TEXTURE_2D);
+}
+
+void desenhaParedeBar(){
+	/* Desenha a parede do lado das escadas	*/
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[2]);
+
+	glPushMatrix();
+		
+		glTranslatef(larguraChao*0.5,alturaParede*0.5,0);
+		glScalef(larguraChao,alturaParede,larguraParede);
+		solidCube(1.0, texture[2]);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+}
+
+void desenhaParedeCasabanho(){
+	/* Desenha a parede casa de banho	*/
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[2]);
+
+	glPushMatrix();
+		
+		glTranslatef(larguraChao*0.4*0.5,alturaParede*0.5,5);
+		glScalef(larguraChao*0.4,alturaParede,larguraParede);
+		solidCube(1.0, texture[2]);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+	
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[2]);
+
+	glPushMatrix();
+		
+		glTranslatef(larguraChao*0.4,alturaParede*0.5,5*0.5);
+		glScalef(larguraParede,alturaParede,5);
+		solidCube(1.0, texture[2]);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+}
+void desenhaBalcao(){
+	/* Desenha o balcao do bar	*/
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[2]);
+
+	glPushMatrix();
+		
+		glTranslatef((0.6*larguraChao*0.5)+larguraChao*0.4,2*0.5,4);
+		glScalef(0.6*larguraChao,2,1);
+		solidCube(1.0, texture[3]);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+}
+
+void desenhaChao(){
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D,texture[0]);
+
+	glPushMatrix();
+		glTranslatef(floorPosition[0], floorPosition[1], floorPosition[2]);
+		
+		glBegin(GL_QUADS);
+
+			glTexCoord2f(0.0f,0.0f); glVertex3i( 0, 0.0, 0); 
+			glTexCoord2f(3.0f,0.0f); glVertex3i(0, 0.0, comprimentoChao);
+			glTexCoord2f(3.0f,3.0f); glVertex3i(larguraChao, 0.0, comprimentoChao);
+			glTexCoord2f(0.0f,3.0f); glVertex3i(larguraChao, 0.0, 0);
+
+		glEnd();
+	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
+
+}
+
+void desenhaParede(){
+
+	glMaterialfv(GL_FRONT, GL_AMBIENT, obsidianAmb);
+ 
+  	glMaterialfv(GL_FRONT, GL_DIFFUSE, obsidianDif);
+  
+ 	glMaterialfv(GL_FRONT, GL_SPECULAR, obsidianSpec);
+  	glMaterialf(GL_FRONT, GL_SHININESS, obsidianCoef);
+
+	glPushMatrix();
+
+		glTranslatef(4.5,0.0,10.0);
+
+	
+		glPushMatrix();
+			glTranslatef(0.0,2.5,1.0);
+			glScalef(1.0,1.0,3.0);
+				glutSolidCube(1.0);
+		glPopMatrix();
+
+		glPushMatrix();	
+			glTranslatef(0.0,1.5,2.0);
+				glutSolidCube(1.0);
+		glPopMatrix();
+
+		glPushMatrix();	
+			
+			glTranslatef(0.0,1.5,0.0);
+			glutSolidCube(1.0);
+		glPopMatrix();
+
+		glPushMatrix();
+			glTranslatef(0.0,0.5,1.0);
+			glScalef(1.0,1.0,3.0);
+				glutSolidCube(1.0);
+		glPopMatrix();	
+
+	glPopMatrix();
+}
+
+void desenhaSofa(){
+
+	/*glEnable(GL_COLOR_MATERIAL);
+	glColor4f(BLACK);*/
+
+	glMaterialfv(GL_FRONT, GL_AMBIENT, blackPlasticAmb);
+  	glMaterialfv(GL_FRONT, GL_DIFFUSE, blackPlasticDif);
+ 	glMaterialfv(GL_FRONT, GL_SPECULAR, blackPlasticSpec);
+  	glMaterialf(GL_FRONT, GL_SHININESS, blackPlasticCoef);
+
+
+	glPushMatrix();
+		
+		glTranslatef(5.6,0.3,11.15);
+		glScalef(0.25,0.22,0.25);
+		glRotatef(90.0,0.0,0.0,1.0);
+		glRotatef(90.0,0.0,1.0,0.0);
+		DrawAllMeshes();
+	glPopMatrix();
+}
+
+void iluminacao(){
+
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+ 
+	GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f};
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, ambientColor);
+
+ 	
+	GLfloat qaDiffuseLight[]   = {0.5,0.5,0.5,1.0};	  
+	
+	GLfloat posicaoLuz[]= {8, 2, 11, 1.0};
+	float difLight0[4] = {2.f, 2.f, 2.f, 1.f};
+	
+	glLightfv(GL_LIGHT0, GL_POSITION,      posicaoLuz );   
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, difLight0);
+
+
+	glEnable(GL_LIGHT1);
+	GLfloat diff[3] ={2.f, 10.f, 10.f};
+	GLfloat pos[4] = {5,2,11,1.0};
+	GLfloat spotDir[3] = {-1,-1,0.5};
+	glLightfv(GL_LIGHT1, GL_POSITION, pos);
+	glLightfv(GL_LIGHT1, GL_DIFFUSE, diff);
+	glLightfv(GL_LIGHT1, GL_SPOT_DIRECTION, spotDir);
+	glLightf(GL_LIGHT1, GL_SPOT_CUTOFF, 30.0); 
+
+}
+void print(int x, int y, const char *string)
+{
+        //Assume we are in MODEL_VIEW already
+	glPushMatrix ();
+	glLoadIdentity ();
+	glMatrixMode(GL_PROJECTION);
+	glPushMatrix ();
+	glLoadIdentity();
+
+	GLint viewport [4];
+	glGetIntegerv (GL_VIEWPORT, viewport);
+	gluOrtho2D (0,viewport[2], viewport[3], 0);
+	
+	glDepthFunc (GL_ALWAYS);
+	glColor3f (1,1,1);
+	glRasterPos2f(x, y);
+	for (int i = 0; string!= '\0'; ++i)
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, string[i]);
+	glDepthFunc (GL_LESS);
+	glPopMatrix ();
+	glMatrixMode(GL_MODELVIEW);
+	glPopMatrix ();
+}
+  
+void renderizacao()
+{
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Apagar ]
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+   
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Janela Visualizacao ]
+	glViewport (0,0,tamanhoJanelaX, tamanhoJanelaY);
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Projeccao]
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	
+	gluPerspective(fov,asp,comprimentoChao/10,10*comprimentoChao);
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Modelo+View(camera/observador) ]
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+
+	controloCamera();
+	gluLookAt(obsP[0], obsP[1], obsP[2],obsD[0],obsD[1],obsD[2], 0, 1, 0);
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ Objectos ]
+
+	iluminacao();
+	desenhaSofa();
+	desenhaParede();
+	desenhaFonte();
+	desenhaBalcao();
+	desenhaParedeCasabanho();
+	desenhaParedeBar();
+	desenhaParedeEscadas();
+	
+	desenhaChao();
+	desenhaRelva();
+	desenhaSkybox();
+	
+	
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Actualizacao
+	glutSwapBuffers();
+}
+void keyboard(unsigned char key, int x, int y){
+	
+	switch (key) {
+	case 'w':
+	case 'W':
+		quedaXFonte -=0.01;
+		glutPostRedisplay();
+	break;
+	case 's':
+	case 'S':
+		quedaXFonte +=0.01;
+		glutPostRedisplay();
+	break;
+	case 'a':
+	case 'A':
+		quedaZFonte +=0.01;
+		glutPostRedisplay();
+	break;
+	case 'd':
+	case 'D':
+		quedaZFonte -=0.01;
+		glutPostRedisplay();
+	break;
+	case '+':
+		forcaFonte +=0.01;
+		glutPostRedisplay();
+	break;
+	case '-':
+		forcaFonte -=0.01;
+		glutPostRedisplay();
+	break;
+	//--------------------------- Escape
+	case 27:
+		exit(0);
+		break;	
+  }
+}
+void movimentoRato(int x, int y) {
+
+
+	if (x > (tamanhoJanelaX -tamanhoJanelaX/4) )
+		rotateLeft = true;
+	
+	else if (x < tamanhoJanelaX/4)
+		rotateRight = true;
+	else{
+		rotateLeft = false;
+		rotateRight = false;
+	}
+
+	if (y > (tamanhoJanelaY -tamanhoJanelaY/4))
+		zoomIn = true;
+	else if (y < (tamanhoJanelaY/4))
+		zoomOut = true;
+	else{
+		zoomIn = false;
+		zoomOut = false;
+	}
+}
+
+
+int main(int argc, char** argv)
+{
+    glutInit(&argc, argv);
+ 	glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH );
+    glutInitWindowSize(tamanhoJanelaX,tamanhoJanelaY);
+    glutInitWindowPosition(100,100);
+    glutCreateWindow("Computacao Grafica - Fonte no bar do DEI");
+	init();
+	
+	glutKeyboardFunc(keyboard);
+	glutPassiveMotionFunc(movimentoRato);
+	glutDisplayFunc(renderizacao);
+    glutMainLoop();    
+    return 0;
+}

@@ -1,0 +1,3 @@
+lex SmallPascalCompiler.l
+yacc -d SmallPascalCompiler.y
+gcc -Wall -o SmallPascalCompiler *.c
