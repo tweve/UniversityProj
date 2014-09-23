@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.jwetherell.augmented_reality.activity"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:icon="@drawable/appicon"
+        android:label="MeetDroid"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.jwetherell.augmented_reality.activity.AndroidFacebookConnectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jwetherell.augmented_reality.activity.Demo"
+            android:label="@string/title_activity_login" 
+            android:screenOrientation="landscape" >
+            >
+            
+             <intent-filter>
+                <action android:name="com.jwetherell.augmented_reality.activity.Demo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jwetherell.augmented_reality.activity.Register"
+            android:label="@string/title_activity_login" 
+            android:screenOrientation="portrait" >
+            >
+            
+             <intent-filter>
+                <action android:name="com.jwetherell.augmented_reality.activity.Register" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.jwetherell.augmented_reality.activity.Post"
+            android:label="@string/title_activity_login" 
+            android:screenOrientation="landscape" >
+            >
+            
+             <intent-filter>
+                <action android:name="com.jwetherell.augmented_reality.activity.Post" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jwetherell.augmented_reality.activity.ShowPerson"
+            android:label="@string/title_activity_login" 
+            android:screenOrientation="landscape" >
+            >
+            
+             <intent-filter>
+                <action android:name="com.jwetherell.augmented_reality.activity.ShowPerson" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
+        <activity android:name="com.facebook.LoginActivity"></activity>
+    </application>
+
+</manifest>

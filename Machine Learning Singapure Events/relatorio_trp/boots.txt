@@ -1,0 +1,18 @@
+The bootstrap method is to take terms in our dataset and make a random choice of elements, allowing for repetition, to create a training set. In our implementation the test set is our original full dataset, thus making our implementation simple error by bootstrap. 
+With this method of date sampling we got better results compared to the previous two methods, this is due to the fact that we are using several training sets, so there is a wide variety of data.
+
+ACCURACY 
+The accuracy can be considerated the tolerance area of the results, in other words the accuracy is the positive results of our system. 
+
+
+AUC
+This parameter analysis using ROC curves, and is the value corresponding to the area under the curve (AUC).
+When using normalized units, the area AUC is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one.
+A reliable and valid AUC estimate can be interpreted as the probability that the classifier will assign a higher score to a randomly chosen positive example than to a randomly chosen negative example.
+
+PRECISION
+The precision of a measurement system is the degree to which repeated measurements under unchanged conditions show the same results. This parameter is defined as the proportion of the true positives against all the positive results. The precision requires details in the output data.
+
+RECALL
+Recall is the fraction of relevant instances that are retrieved. A high recall means that an algorithm returned most of the relevant results.
+Recall is defined as the number of true positives divided by the total number of elements that actually belong to the positive class.

@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: fuzzycomp
+Version: 0.2.1
+Summary: A package implementing various sequence/string comparison                 algorithms.
+Home-page: http://code.google.com/p/fuzzycomp/
+Author: Björn Larsson
+Author-email: fuzzycomp@googlegroups.com
+License: GPLv3
+Download-URL: http://code.google.com/p/fuzzycomp/downloads/list
+Description: UNKNOWN
+Keywords: comparison,fuzzy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities

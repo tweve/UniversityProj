@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Algorithms &mdash; fuzzycomp 0.2.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.2.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="fuzzycomp 0.2.1 documentation" href="index.html" />
+    <link rel="next" title="Contact" href="contact.html" />
+    <link rel="prev" title="Installing" href="install.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="contact.html" title="Contact"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Installing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">fuzzycomp 0.2.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="algorithms">
+<h1>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="comparison">
+<h2>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="function">
+<dt id="fuzzycomp.levenshtein_distance">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">levenshtein_distance</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.levenshtein_distance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An int &gt;= 0 representing the Levenshtein Distance.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the Levenshtein distance between two strings as described in
+more detail <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Levenshtein_distance">here</a> .</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.jaccard_distance">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">jaccard_distance</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.jaccard_distance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A float in the range [0.0, 1.0]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the Jaccard Distance for the two objects. The full explanation
+can be found <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Jaccard_index">here</a>. The equation used is as
+follows.</p>
+<div class="math">
+<p><img src="_images/math/b56064ce4bd3844ecd82c035fccccfae193ad8be.png" alt="J_{\delta}(lhs,rhs) = { { |lhs \cup rhs| - |lhs \cap rhs| } \over
+|lhs \cup rhs| }"/></p>
+</div></dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.hamming_distance">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">hamming_distance</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.hamming_distance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An int &gt;= 0 representing the Hamming Distance between the two
+objects.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the Hamming Distance between two sequences as described in
+more detail <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Hamming_distance">here</a> .</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.lcs_length">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">lcs_length</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.lcs_length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An int &gt;= 0 indicating the Longest Common Subsequence.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the longest common subsequence as described in more detail
+<a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Longest_common_subsequence_problem">here</a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.jaro_distance">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">jaro_distance</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.jaro_distance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A float in the range [0.0, 1.0]. 1.0 denotes a perfect match.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Implements the Jaro Distance as described <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Jaro%E2%80%93Winkler_distance">here</a> .</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.jaro_winkler">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">jaro_winkler</tt><big>(</big><em>lhs</em>, <em>rhs</em>, <em>prefix_scale=0.1</em><big>)</big><a class="headerlink" href="#fuzzycomp.jaro_winkler" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+<li><strong>prefix_scale</strong> &#8211; The scale factor to use for common prefixes.  The
+value should not be larger than <strong>0.25</strong>, although this is not enforced
+by the function.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A float &gt;= 0.0. For 0.0 &lt;= <em>prefix_scale</em> &lt;= 0.25.  The return
+value will be in the range [0.0, 1.0]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Implements the Jaro Winkler Distance as described <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Jaro%E2%80%93Winkler_distance">here</a> .</p>
+<p>The Jaro Winkler favours strings with a common prefix. The weight given
+to strings with a common prefix is controlled using the <em>prefix_scale</em>
+parameter. The standard value for <em>prefix_scale</em> for the Jaro Winkler
+distance is 0.1 and the value should normally not be greater than 0.5 as
+this could produce distance values greater than 1.0.</p>
+<p>For the common prefix, a maximum of 4 characters will be considered.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.dice_coefficient">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">dice_coefficient</tt><big>(</big><em>lhs</em>, <em>rhs</em><big>)</big><a class="headerlink" href="#fuzzycomp.dice_coefficient" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A float in the range [0.0, 1.0]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the dice coefficient as described <a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Dice%27s_coefficient">here</a> using the equation.</p>
+<div class="math">
+<p><img src="_images/math/f1362a507c6d5fdb6560daa95726479b84f61385.png" alt="s = \frac{2 * | lhs \cap rhs |}{| lhs | + | rhs |}"/></p>
+</div><p>When comparing strings, the bigrams are calculated for the both strings
+and they are then compared, using the above equation.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.tversky_index">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">tversky_index</tt><big>(</big><em>lhs</em>, <em>rhs</em>, <em>alpha</em>, <em>beta</em><big>)</big><a class="headerlink" href="#fuzzycomp.tversky_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lhs</strong> &#8211; The object to compare</li>
+<li><strong>rhs</strong> &#8211; The object to compare with</li>
+<li><strong>alpha</strong> &#8211; </li>
+<li><strong>beta</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A float in the range [0.0, 1.0]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculates the Tversky index for the two objects,
+as described <a class="reference external" href="http://en.wikipedia.org/wiki/Tversky_index">here</a></p>
+<div class="math">
+<p><img src="_images/math/29155c5f50575f251b83b5fc08b45a7c550c3264.png" alt="S(lhs, rhs) = \frac{| lhs \cap rhs |}{| lhs \cap rhs | + \alpha
+| lhs - rhs | + \beta | rhs - lhs |}"/></p>
+</div><p>When comparing strings, the bigrams for the both strings are calculated
+and they are then compared using the above equation.</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="phonetic">
+<h2>Phonetic<a class="headerlink" href="#phonetic" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="function">
+<dt id="fuzzycomp.soundex">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">soundex</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#fuzzycomp.soundex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str, unicode</em>) &#8211; The name to be encoded</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The encoded string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body">ValueError</td>
+</tr>
+</tbody>
+</table>
+<p>Implements the American Soundex Algorithm. The algorithm is described on
+<a class="reference external" href="https://secure.wikimedia.org/wikipedia/en/wiki/Soundex">Wikipedia</a>.</p>
+<p>Calculates a 4 char code for the provided name formatted as LDDD,
+where L is an upper case letter and D is a digit. If the resulting code
+is shorter than 4 char, it is padded with zeros.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This implement ation follows the standard American Soundex
+implementation. There are <a class="reference external" href="http://creativyst.com/Doc/Articles/SoundEx1/SoundEx1.htm">other</a> suggested implementations
+where the letters AEIOUHWY are first encoded as 0 and then removed
+after duplicates have removed. One example where this would make a
+difference is the word &#8220;HERMAN&#8221; that encodes to H650 using classic
+Soundex and to H655 using the suggested change.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.nysiis">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">nysiis</tt><big>(</big><em>name</em>, <em>truncate=True</em><big>)</big><a class="headerlink" href="#fuzzycomp.nysiis" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str, unicode</em>) &#8211; The name to be encoded</li>
+<li><strong>truncate</strong> (<em>bool</em>) &#8211; Flag to control  if the returned code should be
+truncated to 6 chars or not. For a true NYSIIS implementation,
+this should be True.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The encoded string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Implements the original New York State Identification and Intelligence
+System ( NYSIIS ) phonetic algorithm. The algorithm is described on <a class="reference external" href="http://dropby.com/NYSIIS.html">this</a> page and on <a class="reference external" href="http://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System">Wikipedia</a> .</p>
+<p>For the standard NYSIIS algorithm, the resulting code is truncated to a
+maximum of 6 characters, this could be changed by passing <em>truncate</em> =
+False to return the full length codes.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There appears to be an error in the description in the
+<a class="reference external" href="http://en.wikipedia.org/wiki/New_York_State_Identification_and_Intelligence_System">Wikipedia</a>
+description of the algorithm. It is stated that KN -&gt; N in the
+beginning of the word, however several other sources suggest that it
+should be KN -&gt; NN so that KNUTH -&gt; NNAT. This is the functionality
+that has been implemented.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.metaphone">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">metaphone</tt><big>(</big><em>name</em>, <em>length=4</em><big>)</big><a class="headerlink" href="#fuzzycomp.metaphone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str, unicode</em>) &#8211; The name to be encoded</li>
+<li><strong>length</strong> (<em>int</em>) &#8211; The maximum length to use for the resulting code</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A string of maximum length <em>length</em></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body"><p class="first last">ValueError</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There appear to be several different ways to implement the Metaphone
+algorithm. This seems to come from the fact that the description and the
+implementation of the original algorithm from Lawrence Philips do not
+correspond entirely.</p>
+<p>This implementation aims at following the inte rpreted implementation
+presented by <a class="reference external" href="http://aspell.net/metaphone/metaphone-kuhn.txt">Michael Kuhn</a>.</p>
+<p>Normally the first four characters of the code are used for the Metaphone,
+but the maximum length of the returned code can be controlled by passing
+the <em>length</em> argument.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="fuzzycomp.cologne_phonetic">
+<tt class="descclassname">fuzzycomp.</tt><tt class="descname">cologne_phonetic</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#fuzzycomp.cologne_phonetic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str, unicode</em>) &#8211; The name to be encoded</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The encoded string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise :</th><td class="field-body">ValueError</td>
+</tr>
+</tbody>
+</table>
+<p>The Cologne Phonetic Algorithm is a phonetic encoding algorithm
+specialised for the german language. A description in english can be
+found on the manual page for <a class="reference external" href="http://commons.apache.org/codec/apidocs/org/apache/commons/codec/language/ColognePhonetic.html">this</a> Java implementation.</p>
+<p>Wikipedia has a <a class="reference external" href="https://secure.wikimedia.org/wikipedia/de/wiki/K%C3%B6lner_Phonetik">description</a> of the algorithm in german.</p>
+<p>Unlike most other phonetic encoding algorithms, the Cologne Phonetic is
+not truncated to a specific length but rather returned in its full length.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As suggested in the Wikipedia description,
+umlauts and ß are encoded as 0</p>
+</div>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Using some of the comparison algorithms:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fuzzycomp</span> <span class="kn">import</span> <span class="n">fuzzycomp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">levenshtein_distance</span><span class="p">(</span><span class="s">&quot;Saturday&quot;</span><span class="p">,</span> <span class="s">&quot;Sunday&quot;</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">jaccard_distance</span><span class="p">(</span> <span class="s">&quot;Hello&quot;</span><span class="p">,</span> <span class="s">&quot;World&quot;</span> <span class="p">)</span>
+<span class="go">0.7142857142857143</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">lcs_length</span><span class="p">(</span><span class="s">&quot;XMJYAUZ&quot;</span><span class="p">,</span> <span class="s">&quot;MZJAWXU&quot;</span><span class="p">)</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">jaro_winkler</span><span class="p">(</span> <span class="s">&quot;DWAYNE&quot;</span><span class="p">,</span> <span class="s">&quot;DUANE&quot;</span> <span class="p">)</span>
+<span class="go">0.8400000000000001</span>
+</pre></div>
+</div>
+<p>And for the phonetic algorithms:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fuzzycomp</span> <span class="kn">import</span> <span class="n">fuzzycomp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">soundex</span><span class="p">(</span><span class="s">&quot;HERMAN&quot;</span><span class="p">)</span>
+<span class="go">&#39;H650&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">nysiis</span><span class="p">(</span><span class="s">&quot;KNUTH&quot;</span><span class="p">)</span>
+<span class="go">&#39;NNAT&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">nysiis</span><span class="p">(</span><span class="s">&quot;PHILLIPSON&quot;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="go">&#39;FFALAPSAN&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">metaphone</span><span class="p">(</span> <span class="s">&quot;ANASTHA&quot;</span> <span class="p">)</span>
+<span class="go">&#39;ANS0&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">metaphone</span><span class="p">(</span><span class="s">&quot;ESCARMANT&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="go">&#39;ESKRMNT&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzycomp</span><span class="o">.</span><span class="n">cologne_phonetic</span><span class="p">(</span><span class="s">&quot;Breschnew&quot;</span><span class="p">)</span>
+<span class="go">&#39;17863&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Algorithms</a><ul>
+<li><a class="reference internal" href="#comparison">Comparison</a></li>
+<li><a class="reference internal" href="#phonetic">Phonetic</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="install.html"
+                        title="previous chapter">Installing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="contact.html"
+                        title="next chapter">Contact</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/algorithms.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="contact.html" title="Contact"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Installing"
+             >previous</a> |</li>
+        <li><a href="index.html">fuzzycomp 0.2.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Björn Larsson.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+Feito:
+	-Registar novos utilizadores
+	-Configurar distancia maxima manualmente
+	-Guardar informacao no servidor de forma permanente
+	-Adicionar amigos
+	-Adicionar opcao de ver apenas posts de amigos
+	-Ver perfil de utilizador quando se clica num post
+	-Mensagens sao eliminadas de 1 em 1 hora
+	-Já tenho 7 pessoas a testar a aplicação
+	
+	
+	
+workshop - como é ?(apresentação? tempo?)
+relatorio - estrutura?
+
+
+
+login facebook
+melhorar gui

@@ -1,0 +1,5 @@
+In the present work we pretend to implement and analyse an Event Matching System (EMS).
+
+With the introduction of new Information and Communication technologies and the proliferation of the internet access and social media, "big data" databases are everyday more common. However it is hard to extract meaning from this databases for intelligent usage, in other words it is hard to attain semantic information from the "big data". In this work we implement an EMT system that could operate in such systems in order to verify if two events are the same or not.
+For that we used an real dataset consisting of 2090 pairs of events from the south-asian country of Singapore labeled as matches/non-matches. For each event you are given the following characteristics: event identifier, event title, venue, start/end dates and times, address, latitude, longitude, categories and description.
+We are going to study diverse methods of feature selection, different classifiers (Bayes, SVM, Fisher, KNN), data sampling techniques and evaluation metrics to analyse machine learning technologies applies to EMS.

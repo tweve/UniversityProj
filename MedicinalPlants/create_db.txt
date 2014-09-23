@@ -1,0 +1,20 @@
+mysql pw: root
+
+create database medicinal_plants;
+
+use medicinal_plants;
+
+CREATE TABLE plants (
+         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         scientific_name VARCHAR(100),
+		 family_name VARCHAR(100),
+		 english_name VARCHAR(100),
+		 local_name VARCHAR(100),
+		 description VARCHAR(5000),
+		 status VARCHAR(50),
+		 edible_parts VARCHAR(100),
+		 treatment_for VARCHAR(500),
+		 parts_used VARCHAR(500),
+		 medical_properties VARCHAR(500)
+);
+insert into plants (scientific_name,family_name,english_name,local_name,description,status,edible_parts,treatment_for,parts_used,medical_properties) values

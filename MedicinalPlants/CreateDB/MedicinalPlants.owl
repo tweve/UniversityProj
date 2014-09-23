@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/Plantas.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Plantas.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="PlantPart"/>
+  <owl:Class rdf:ID="Classification"/>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:ID="Species"/>
+      <owl:Class rdf:ID="Genre"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Disease"/>
+  <owl:Class rdf:ID="Plant"/>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="#Genre"/>
+      <owl:Class rdf:about="#Species"/>
+      <owl:Class rdf:ID="Family"/>
+      <owl:Class rdf:about="#Disease"/>
+      <owl:Class rdf:ID="MedicinalProperty"/>
+      <owl:Class rdf:about="#PlantPart"/>
+      <owl:Class rdf:about="#Plant"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Species">
+    <rdfs:subClassOf rdf:resource="#Classification"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Family">
+    <rdfs:subClassOf rdf:resource="#Classification"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Genre">
+    <rdfs:subClassOf rdf:resource="#Classification"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasEdiblePart">
+    <rdfs:domain rdf:resource="#Plant"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >edible</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >eatable</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >part</rdfs:label>
+    <rdfs:range rdf:resource="#PlantPart"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasFamily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >family</rdfs:label>
+    <rdfs:range rdf:resource="#Family"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMedicalProperty">
+    <rdfs:range rdf:resource="#MedicinalProperty"/>
+    <rdfs:domain rdf:resource="#Plant"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >property</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTreatmentFor">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cures</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >treatment</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >treats</rdfs:label>
+    <rdfs:domain rdf:resource="#Plant"/>
+    <rdfs:range rdf:resource="#Disease"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPlantPart">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >part</rdfs:label>
+    <rdfs:domain rdf:resource="#Plant"/>
+    <rdfs:range rdf:resource="#PlantPart"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasClassification">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >designation</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >name</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >classification</rdfs:label>
+    <rdfs:range rdf:resource="#Classification"/>
+    <rdfs:domain rdf:resource="#Plant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasGenre">
+    <rdfs:range rdf:resource="#Genre"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >genre</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasDescription">
+    <rdfs:domain rdf:resource="#Plant"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->

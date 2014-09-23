@@ -1,0 +1,10 @@
+First we calculated the average of 5 runs of fisher, after applying to the dataset the PCA method.
+By looking at the graphic we conclude which has the best number of features for this method. That was 5 features which we can get the F1 value ~0.84 with a accuraccy of ~0.76 and the area under the curve was about 0.75.
+After making an average of 5 runs of fisher, with raw data, we got the graphic with accuracy, area under curve and F1.
+By analyses of the graphic, we can see the best values we got was with 3 features, givin F1 values within 0.8 and 0.85, with ~0.77 accuraccy and AUC slightly over 0.75.
+
+When we compare the two methods we can conclude that less of 5 features for PCA data or 3 features with raw data we got very bad results because we had limited information, more of that number of features the results undergo little change, because by increasing the amount of information also increases the complexity of the problem and can take the decision-making capacity.
+
+
+INTRO
+Fisher's linear discriminant is a classification method that projects high-dimensional data onto a line and performs classification in this one-dimensional space. The projection maximizes the distance between the means of the two classes while minimizing the variance within each class. 

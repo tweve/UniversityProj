@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeetDroid</string>
+    <string name="google_places_api_key">AIzaSyC5mTsDhjayzCqXH87ggEYsfswR1cStfX8</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">MeetDroid</string>
+    <string name="app_icon">app_icon</string>
+    <string name="username">username</string>
+    <string name="subtitle">An augmented reality social network</string>
+    <string name="app_id">581861591847857</string>
+
+</resources>

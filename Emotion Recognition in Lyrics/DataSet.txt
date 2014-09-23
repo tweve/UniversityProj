@@ -1,0 +1,1219 @@
+1	neutral	Cinderella
+2	sadness	Once upon a time there lived an unhappy young girl.
+3	sadness	Unhappy she was, for her mother was dead,
+4	neutral	her father had married another woman, a widow with two daughters,
+5	sadness	and her stepmother didn't like her one little bit.
+6	sadness	All the nice things, kind thoughts and loving touches were for her own daughters.
+7	sadness	And not just the kind thoughts and love, but also dresses, shoes, shawls, delicious food, comfy beds, as well as every home comfort.
+8	neutral	All this was laid on for her daughters.
+9	sadness	But, for the poor unhappy girl, there was nothing at all.
+10	sadness	No dresses, only her stepsisters' hand-me-downs.
+11	sadness	No lovely dishes, nothing but scraps.
+12	sadness	No nice rests and comfort.
+13	sadness	For she had to work hard all day, and only when evening came was she allowed to sit for a while by the fire, near the cinders.
+14	neutral	That is how she got her nickname, for everybody called her Cinderella.
+15	sadness	Cinderella used to spend long hours all alone talking to the cat.
+16	neutral	The cat said,
+17	neutral	"Miaow",
+18	neutral	which really meant,
+21	neutral	It was quite true.
+23	disgust	While her stepsisters, no matter how splendid and elegant their clothes, were still clumsy, lumpy and ugly and always would be.
+24	neutral	One day, beautiful new dresses arrived at the house.
+25	neutral	A ball was to be held at Court and the stepsisters were getting ready to go to it.
+26	neutral	Cinderella, didn't even dare ask,
+27	neutral	"What about me?"
+28	neutral	for she knew very well what the answer to that would be:
+29	anger	"You?
+30	anger	My dear girl, you're staying at home to wash the dishes, scrub the floors and turn down the beds for your stepsisters.
+31	anger	They will come home tired and very sleepy."
+32	neutral	Cinderella sighed at the cat.
+33	sadness	"Oh dear, I'm so unhappy!"
+34	neutral	and the cat murmured
+35	neutral	"Miaow".
+36	surprise	Suddenly something amazing happened.
+37	surprise	In the kitchen, where Cinderella was sitting all by herself, there was a burst of light and a fairy appeared.
+39	neutral	said the fairy.
+43	sadness	"How can I, dressed in rags?"
+44	neutral	Cinderella replied.
+45	sadness	"The servants will turn me away!"
+46	neutral	The fairy smiled.
+47	happiness	With a flick of her magic wand...
+48	surprise	Cinderella found herself wearing the most beautiful dress, the loveliest ever seen in the realm.
+49	happiness	"Now that we have settled the matter of the dress,"
+50	neutral	said the fairy,
+51	happiness	"we'll need to get you a coach.
+52	happiness	A real lady would never go to a ball on foot!"
+53	happiness	"Quick!
+55	neutral	she ordered.
+56	neutral	"Oh of course,"
+57	neutral	said Cinderella, rushing away.
+58	neutral	Then the fairy turned to the cat.
+60	surprise	"Seven mice!"
+61	neutral	said the cat.
+62	surprise	"I didn't know fairies ate mice too!"
+63	anger	"They're not for eating, silly!
+65	anger	and, remember they must be alive!
+66	neutral	Cinderella soon returned with a fine pumpkin and the cat with seven mice he had caught in the cellar.
+67	happiness	"Good!"
+68	neutral	exclaimed the fairy.
+69	surprise	With a flick of her magic wand... wonder of wonders!
+70	surprise	The pumpkin turned into a sparkling coach and the mice became six white horses,
+71	surprise	while the seventh mouse turned into a coachman, in a smart uniform and carrying a whip.
+72	surprise	Cinderella could hardly believe her eyes.
+73	neutral	"I shall present you at Court.
+74	happiness	You will soon see that the Prince, in whose honor the ball is being held, will be enchanted by your loveliness.
+75	fear	But remember!
+76	neutral	You must leave the ball at midnight and come home.
+77	fear	For that is when the spell ends.Your coach will turn back into a pumpkin, the horses will become mice again and the coachman will turn back into a mouse... and you will be dressed again in rags and wearing clogs instead of these dainty little slippers!
+78	fear	Do you understand?"
+79	neutral	Cinderella smiled and said,
+80	happiness	"Yes, I understand!"
+83	surprise	"Who can that be?"
+84	neutral	people asked each other.
+85	surprise	The two stepsisters also wondered who the newcomer was, for never in a month of Sundays, would they ever have guessed that the beautiful girl was really poor Cinderella who talked to the cat!
+87	neutral	Walking over to her, he bowed deeply and asked her to dance.
+88	happiness	And to the great disappointment of all the young ladies, he danced with Cinderella all evening.
+89	happiness	"Who are you, fair maiden?"
+90	neutral	the Prince kept asking her.
+91	neutral	But Cinderella only replied:
+95	neutral	he replied.
+96	happiness	Cinderella had a wonderful time at the ball...
+97	fear	But, all of a sudden, she heard the sound of a clock:
+98	fear	the first stroke of midnight!
+99	fear	She remembered what the fairy had said, and without a word of goodbye she slipped from the Prince's arms and ran down the steps.
+100	fear	As she ran she lost one of her slippers, but not for a moment did she dream of stopping to pick it up!
+101	fear	If the last stroke of midnight were to sound... oh... what a disaster that would be!
+102	neutral	Out she fled and vanished into the night.
+103	neutral	The Prince, who was now madly in love with her, picked up her slipper and said to his ministers,
+106	neutral	So the ministers tried the slipper on the foot of all the girls... and on Cinderella's foot as well...
+107	surprise	Surprise!
+108	happiness	The slipper fitted perfectly.
+109	disgust	"That awful untidy girl simply cannot have been at the ball,"
+110	neutral	snapped the stepmother.
+112	sadness	Can't you see how ugly Cinderella is!
+113	anger	Can't you see?"
+114	neutral	Suddenly she broke off, for the fairy had appeared.
+115	anger	"That's enough!"
+116	neutral	she exclaimed, raising her magic wand.
+117	happiness	In a flash, Cinderella appeared in a splendid dress, shining with youth and beauty.
+118	surprise	Her stepmother and stepsisters gaped at her in amazement, and the ministers said,
+119	happiness	"Come with us, fair maiden!
+120	happiness	The Prince awaits to present you with his engagement ring!"
+121	happiness	So Cinderella joyfully went with them, and lived happily ever after with her Prince.
+122	happiness	And as for the cat, he just said "Miaow"!
+123	neutral	Hansel and Gretel
+124	neutral	Once upon a time a very poor woodcutter lived in a tiny cottage in the forest with his two children, Hansel and Gretel.
+125	neutral	His second wife often ill-treated the children and was forever nagging the woodcutter.
+126	sadness	"There is not enough food in the house for us all.
+127	sadness	There are too many mouths to feed!
+129	neutral	she declared.
+130	sadness	And she kept on trying to persuade her husband to abandon his children in the forest.
+132	happiness	Maybe someone will find them and give them a home."
+133	sadness	The downcast woodcutter didn't know what to do.
+137	neutral	he said.
+138	neutral	And slipping out of the house he filled his pockets with little white pebbles, then went back to bed.
+139	anger	All night long, the woodcutter's wife harped on and on at her husband till, at dawn, he led Hansel and Gretel away into the forest.
+140	neutral	But as they went into the depths of the trees, Hansel dropped a little white pebble here and there on the mossy green ground.
+141	sadness	At a certain point, the two children found they really were alone:
+142	fear	the woodcutter had plucked up enough courage to desert them, had mumbled an excuse and was gone.
+143	fear	Night fell but the woodcutter did not return.
+144	sadness	Gretel began to sob bitterly.
+146	happiness	"Don't cry, trust me!
+148	happiness	"I've left a trail."
+149	neutral	Hansel whispered to Gretel, consolingly.
+150	fear	But when night fell, they saw to their horror, that all the crumbs had gone.
+151	fear	"I'm frightened!"
+152	neutral	wept Gretel bitterly.
+153	sadness	"I'm cold and hungry and I want to go home!"
+156	fear	Hansel tried to encourage his sister, but he too shivered when he glimpsed frightening shadows and evil eyes around them in the darkness.
+157	fear	All night the two children huddled together for warmth at the foot of a large tree.
+158	sadness	When dawn broke, they started to wander about the forest, seeking a path, but all hope soon faded.
+159	sadness	They were well and truly lost.
+160	surprise	On they walked and walked, till suddenly they came upon a strange cottage in the middle of a glade.
+161	surprise	"This is chocolate!"
+162	neutral	gasped Hansel as he broke a lump of plaster from the wall.
+163	surprise	"And this is icing!"
+164	neutral	exclaimed Gretel, putting another piece of wall in her mouth.
+165	happiness	Starving but delighted, the children began to eat pieces of candy broken off the cottage.
+166	happiness	"Isn't this delicious?"
+167	neutral	said Gretel, with her mouth full.
+168	happiness	She had never tasted anything so nice.
+170	neutral	Hansel declared, munching a bit of nougat.
+171	fear	They were just about to try a piece of the biscuit door when it quietly swung open.
+172	happiness	"Well, well!"
+173	neutral	said an old woman, peering out with a crafty look.
+174	happiness	"And haven't you children a sweet tooth?"
+176	neutral	went on the old woman.
+177	fear	Unluckily for Hansel and Gretel, however, the sugar candy cottage belonged to an old witch, her trap for catching unwary victims.
+178	fear	The two children had come to a really nasty place.
+179	anger	"You're nothing but skin and bones!"
+180	neutral	said the witch, locking Hansel into a cage.
+181	fear	"I shall fatten you up and eat you!"
+182	neutral	"You can do the housework,"
+183	neutral	she told Gretel grimly,
+184	fear	"then I'll make a meal of you too!"
+185	happiness	As luck would have it, the witch had very bad eyesight, an when Gretel smeared butter on her glasses, she could see even less.
+186	anger	"Let me feel your finger!"
+187	neutral	said the witch to Hansel every day to check if he was getting any fatter.
+188	neutral	Now, Gretel had brought her brother a chicken bone, and when the witch went to touch his finger, Hansel held out the bone.
+189	anger	"You're still much too thin!"
+190	neutral	she complained.
+191	anger	"When will you become plump?"
+192	neutral	One day the witch grew tired of waiting.
+194	neutral	she told Gretel.
+195	happiness	"We're going to have a tasty roasted boy today!"
+196	neutral	A little later, hungry and impatient, she went on:
+197	anger	"Run and see if the oven is hot enough."
+198	neutral	Gretel returned, whimpering:
+199	fear	"I can't tell if it is hot enough or not."
+200	anger	Angrily, the witch screamed at the little girl:
+201	anger	"Useless child!
+202	anger	All right, I'll see for myself."
+204	happiness	The witch had come to a fit and proper end.
+205	happiness	Gretel ran to set her brother free and they made quite sure that the oven door was tightly shut behind the witch.
+206	neutral	Indeed, just to be on the safe side, they fastened it firmly with a large padlock.
+207	surprise	Then they stayed for several days to eat some more of the house, till they discovered amongst the witch's belongings, a huge chocolate egg.
+208	happiness	Inside lay a casket of gold coins.
+209	happiness	"The witch is now burnt to a cinder,"
+210	neutral	said Hansel,
+212	neutral	They filled a large basket with food and set off into the forest to search for the way home.
+213	happiness	This time, luck was with them, and on the second day, they saw their father come out of the house towards them, weeping.
+214	happiness	"Your stepmother is dead.
+217	sadness	"Promise you'll never ever desert us again,"
+218	neutral	said Gretel, throwing her arms round her father's neck.
+219	neutral	Hansel opened the casket.
+220	happiness	"Look, Father! We're rich now . . .
+221	happiness	You'll never have to chop wood again."
+222	happiness	And they all lived happily together ever after.
+223	neutral	Rapunzel
+225	happiness	At length it appeared that God was about to grant their desire.
+226	happiness	These people had a little window at the back of their house from which a splendid garden could be seen,
+227	happiness	which was full of the most beautiful flowers and herbs.
+228	neutral	It was, however, surrounded by a high wall,
+229	fear	and no one dared to go into it because it belonged to an enchantress,
+230	fear	who had great power and was dreaded by all the world.
+231	neutral	One day the woman was standing by this window and looking down into the garden,
+232	neutral	when she saw a bed which was planted with the most beautiful rampion,
+233	neutral	and it looked so fresh and green that she longed for it.
+234	sadness	She quite pined away, and began to look pale and miserable.
+235	neutral	Her husband was alarmed, and asked:
+236	fear	"What ails you, dear wife?"
+237	sadness	"Ah,"
+238	neutral	she replied,
+239	sadness	"if I can't eat some of the rampion, which is in the garden behind our house, I shall die."
+240	neutral	The man, who loved her, thought:
+243	neutral	She at once made herself a salad of it, and ate it greedily.
+244	happiness	It tasted so good to her, so very good,
+245	neutral	that the next day she longed for it three times as much as before.
+246	neutral	If he was to have any rest, her husband knew he must once more descend into the garden.
+247	neutral	Therefore, in the gloom of evening, he let himself down again;
+248	fear	but when he had clambered down the wall he was terribly afraid,
+249	fear	for he saw the enchantress standing before him.
+250	anger	"How can you dare,"
+251	neutral	said she with angry look,
+252	anger	"descend into my garden and steal my rampion like a thief?
+253	anger	You shall suffer for it!"
+254	fear	"Ah,"
+255	neutral	answered he,
+256	fear	"let mercy take the place of justice, I only made up my mind to do it out of necessity.
+257	fear	My wife saw your rampion from the window, and felt such a longing for it that she would have died if she had not got some to eat."
+258	neutral	The enchantress allowed her anger to be softened, and said to him:
+259	fear	"If the case be as you say, I will allow you to take away with you as much rampion as you will, only I make one condition,
+260	fear	you must give me the child which your wife will bring into the world;
+262	fear	The man in his terror consented to everything.
+263	neutral	When the woman was brought to bed, the enchantress appeared at once,
+264	neutral	gave the child the name of Rapunzel,
+265	neutral	and took it away with her.
+266	happiness	Rapunzel grew into the most beautiful child under the sun.
+267	fear	When she was twelve years old, the enchantress shut her into a tower in the middle of a forest.
+268	neutral	The tower had neither stairs nor door,
+269	neutral	but near the top was a little window.
+270	neutral	When the enchantress wanted to go in, she placed herself beneath it and cried:
+271	neutral	"Rapunzel, Rapunzel, let down your hair to me."
+272	neutral	Rapunzel had magnificent long hair, fine as spun gold, and when she heard the voice of the enchantress, she unfastened her braided tresses, wound them round one of the hooks of the window above, and then the hair fell twenty ells down, and the enchantress climbed up by it.
+273	neutral	After a year or two, it came to pass that the king's son rode through the forest and passed by the tower.
+274	neutral	Then he heard a song, which was so charming that he stood still and listened.
+275	neutral	It was Rapunzel, who in her solitude passed her time in letting her sweet voice resound.
+276	neutral	The king's son wanted to climb up to her, and looked for the door of the tower, but none was to be found.
+277	neutral	He rode home, but the singing had so deeply touched his heart, that every day he went out into the forest and listened to it.
+278	neutral	Once when he was thus standing behind a tree, he saw that an enchantress came there, and he heard how she cried:
+279	neutral	"Rapunzel, Rapunzel, let down your hair to me."
+280	neutral	Then Rapunzel let down the braids of her hair, and the enchantress climbed up to her.
+281	neutral	"If that is the ladder by which one mounts, I too will try my fortune,"
+282	neutral	said he, and the next day when it began to grow dark, he went to the tower and cried:
+283	neutral	"Rapunzel, Rapunzel, let down your hair to me."
+284	neutral	Immediately the hair fell down and the king's son climbed up.
+285	fear	At first Rapunzel was terribly frightened when a man, such as her eyes had never yet beheld, came to her;
+286	neutral	but the king's son began to talk to her quite like a friend,
+287	neutral	and told her that his heart had been so stirred that it had let him have no rest, and he had been forced to see her.
+288	neutral	Then Rapunzel lost her fear,
+289	neutral	and when he asked her if she would take him for her husband,
+290	neutral	and she saw that he was young and handsome, she thought:
+292	happiness	and she said yes, and laid her hand in his.
+293	neutral	She said:
+294	fear	"I will willingly go away with you, but I do not know how to get down."
+296	happiness	and I will weave a ladder with it, and when that is ready I will descend, and you will take me on your horse."
+297	neutral	They agreed that until that time he should come to her every evening, for the old woman came by day.
+298	neutral	The enchantress remarked nothing of this, until once Rapunzel said to her:
+299	neutral	"Tell me, Dame Gothel, how it happens that you are so much heavier for me to draw up than the young king's son, he is with me in a moment."
+300	anger	"Ah! you wicked child,"
+301	neutral	cried the enchantress.
+302	anger	"What do I hear you say!
+303	anger	I thought I had separated you from all the world, and yet you have deceived me!"
+304	anger	In her anger she clutched Rapunzel's beautiful tresses,
+305	anger	wrapped them twice round her left hand, seized a pair of scissors with the right, and snip, snap, they were cut off,
+306	anger	and the lovely braids lay on the ground.
+307	sadness	And she was so pitiless that she took poor Rapunzel into a desert where she had to live in great grief and misery.
+308	neutral	On the same day that she cast out Rapunzel, however,
+309	neutral	the enchantress fastened the braids of hair, which she had cut off, to the hook of the window, and when the king's son came and cried:
+310	neutral	"Rapunzel, Rapunzel, let down your hair to me."
+311	neutral	she let the hair down.
+312	neutral	The king's son ascended,
+313	neutral	but instead of finding his dearest Rapunzel,
+314	surprise	he found the enchantress,
+315	fear	who gazed at him with wicked and venomous looks.
+316	neutral	"Aha!"
+317	neutral	she cried mockingly,
+318	anger	"you would fetch your dearest, but the beautiful bird sits no longer singing in the nest;
+319	anger	the cat has got it, and will scratch out your eyes as well.
+320	anger	Rapunzel is lost to you;<br>you will never see her again."
+321	sadness	The king's son was beside himself with pain, and in his despair he leapt down from the tower.
+322	sadness	He escaped with his life, but the thorns into which he fell pierced his eyes.
+323	sadness	He wandered quite blind about the forest, ate nothing but roots and berries, and did naught but lament and weep over the loss of his dearest wife.
+324	sadness	Thus he roamed about in misery for some years, and at length came to the desert where Rapunzel, with the twins to which she had given birth, a boy and a girl, lived in wretchedness.
+325	happiness	He heard a voice, and it seemed so familiar to him that he went towards it, and when he approached, Rapunzel knew him and fell on his neck and wept.
+326	happiness	Two of her tears wetted his eyes and they grew clear again, and he could see with them as before.
+327	happiness	He led her to his kingdom where he was joyfully received, and they lived for a long time afterwards, happy and contented.
+328	neutral	Sleeping Beauty
+329	neutral	A long time ago there were a king and queen who said every day,
+330	sadness	"Ah, if only we had a child,"
+331	sadness	but they never had one.
+332	surprise	But it happened that once when the queen was bathing, a frog crept out of the water on to the land, and said to her,
+333	happiness	"Your wish shall be fulfilled, before a year has gone by, you shall have a daughter."
+334	happiness	What the frog had said came true, and the queen had a little girl who was so pretty that the king could not contain himself for joy, and ordered a great feast.
+335	happiness	He invited not only his kindred, friends and acquaintances, but also the wise women, in order that they might be kind and well disposed towards the child.
+336	sadness	There were thirteen of them in his kingdom, but, as he had only twelve golden plates for them to eat out of, one of them had to be left at home.
+338	happiness	one gave virtue, another beauty, a third riches, and so on with everything in the world that one can wish for.
+339	surprise	When eleven of them had made their promises, suddenly the thirteenth came in.
+340	anger	She wished to avenge herself for not having been invited, and without greeting, or even looking at anyone, she cried with a loud voice,
+341	anger	"The king's daughter shall in her fifteenth year prick herself with a spindle, and fall down dead."
+342	neutral	And, without saying a word more, she turned round and left the room.
+343	fear	They were all shocked,
+344	neutral	but the twelfth, whose good wish still remained unspoken,
+345	neutral	came forward,
+346	happiness	and as she could not undo the evil sentence, but only soften it, she said, it shall not be death, but a deep sleep of a hundred years, into which the princess shall fall.
+349	neutral	It happened that on the very day when she was fifteen years old, the king and queen were not at home, and the maiden was left in the palace quite alone.
+350	surprise	So she went round into all sorts of places, looked into rooms and bed-chambers just as she liked, and at last came to an old tower.
+351	surprise	She climbed up the narrow winding staircase, and reached a little door.
+352	fear	A rusty key was in the lock, and when she turned it the door sprang open, and there in a little room sat an old woman with a spindle, busily spinning her flax.
+353	neutral	"Good day, old mother,"
+354	neutral	said the king's daughter,
+355	neutral	"what are you doing there?"
+356	neutral	"I am spinning,"
+357	neutral	said the old woman, and nodded her head.
+358	surprise	"What sort of thing is that, that rattles round so merrily,"
+359	neutral	said the girl,
+360	fear	and she took the spindle and wanted to spin too.
+361	fear	But scarcely had she touched the spindle when the magic decree was fulfilled, and she pricked her finger with it.
+362	sadness	And, in the very moment when she felt the prick, she fell down upon the bed that stood there, and lay in a deep sleep.
+363	neutral	And this sleep extended over the whole palace,
+364	surprise	the king and queen who had just come home, and had entered the great hall, began to go to sleep, and the whole of the court with them.
+365	neutral	The horses, too, went to sleep in the stable, the dogs in the yard, the pigeons upon the roof, the flies on the wall, even the fire that was flaming on the hearth became quiet and slept,
+366	neutral	the roast meat left off frizzling, and the cook, who was just going to pull the hair of the scullery boy, because he had forgotten something, let him go, and went to sleep.
+367	neutral	And the wind fell, and on the trees before the castle not a leaf moved again.
+368	fear	But round about the castle there began to grow a hedge of thorns, which every year became higher, and at last grew close up round the castle and all over it, so that there was nothing of it to be seen, not even the flag upon the roof.
+369	neutral	But the story of the beautiful sleeping Briar Rose, for so the princess was named, went about the country,
+370	neutral	so that from time to time kings' sons came and tried to get through the thorny hedge into the castle.
+371	neutral	But they found it impossible, for the thorns held fast together, as if they had hands,
+372	sadness	and the youths were caught in them, could not get loose again, and died a miserable death.
+373	neutral	After long, long years a king's son came again to that country, and heard an old man talking about the thorn hedge,
+374	surprise	and that a castle was said to stand behind it in which a wonderfully beautiful princess, named Briar Rose, had been asleep for a hundred years,
+375	neutral	and that the king and queen and the whole court were asleep likewise.
+376	fear	He had heard, too, from his grandfather, that many kings, sons had already come, and had tried to get through the thorny hedge, but they had remained sticking fast in it, and had died a pitiful death.
+377	neutral	Then the youth said,
+380	neutral	" The good old man might dissuade him as he would, he did not listen to his words.
+381	happiness	But by this time the hundred years had just passed, and the day had come when Briar Rose was to awake again.
+382	happiness	When the king's son came near to the thorn hedge, it was nothing but large and beautiful flowers,
+383	happiness	which parted from each other of their own accord, and let him pass unhurt, then they closed again behind him like a hedge.
+384	neutral	In the castle yard he saw the horses and the spotted hounds lying asleep, on the roof sat the pigeons with their heads under their wings.
+385	neutral	And when he entered the house, the flies were asleep upon the wall, the cook in the kitchen was still holding out his hand to seize the boy, and the maid was sitting by the black hen which she was going to pluck.
+386	neutral	He went on farther, and in the great hall he saw the whole of the court lying asleep, and up by the throne lay the king and queen.
+387	happiness	Then he went on still farther, and all was so quiet that a breath could be heard, and at last he came to the tower, and opened the door into the little room where Briar Rose was sleeping.
+390	surprise	Then they went down together, and the king awoke, and the queen, and the whole court, and looked at each other in great astonishment.
+391	happiness	And the horses in the courtyard stood up and shook themselves, the hounds jumped up and wagged their tails, the pigeons upon the roof pulled out their heads from under their wings, looked round, and flew into the open country, the flies on the wall crept again, the fire in the kitchen burned up and flickered and cooked the meat, the joint began to turn and sizzle again, and the cook gave the boy such a box on the ear that he screamed, and the maid finished plucking the fowl.
+392	happiness	And then the marriage of the king's son with Briar Rose was celebrated with all splendor, and they lived contented to the end of their days.
+393	neutral	The Cristal Ball
+395	fear	but the old woman did not trust them, and thought they wanted to steal her power from her.
+396	sadness	So she changed the eldest into an eagle, which was forced to dwell in the rocky mountains, and was often seen flying in great circles in the sky.
+397	neutral	The second, she changed into a whale, which lived in the deep sea, and all that was seen of it was that it sometimes spouted up a great jet of water in the air.
+398	fear	Each of them bore his human form for only two hours daily.
+399	fear	The third son, who was afraid she might change him into a raging wild beast - a bear perhaps, or a wolf, went secretly away.
+400	neutral	He had heard that a king's daughter who was bewitched, was imprisoned in the castle of the golden sun, and was waiting to be set free.
+401	fear	Those, however, who tried to free her risked their lives.
+402	fear	Three-and-twenty youths had already died a miserable death, and now only one other might make the attempt, after which no more must come.
+404	sadness	He had already traveled about for a long time without being able to find it, when he came by chance into a great forest, and did not know the way out of it.
+405	neutral	All at once he saw in the distance two giants, who made a sign to him with their hands, and when he came to them they said,
+406	neutral	we are quarreling about a cap, and which of us it is to belong to,
+407	neutral	and as we are equally strong, neither of us can get the better of the other.
+408	neutral	The small men are cleverer than we are, so we will leave the decision to you.
+409	surprise	How can you dispute about an old cap,
+410	neutral	said the youth.
+411	anger	You do not know what properties it has.
+412	surprise	It is a wishing-cap, whosoever puts it on, can wish himself away wherever he likes,
+413	surprise	and in an instant he will be there.
+415	neutral	said the youth,
+416	neutral	I will go a short distance off,
+418	neutral	He put it on and went away, and thought of the king's daughter, forgot the giants, and walked continually onward.
+419	sadness	At length he sighed from the very bottom of his heart, and cried,
+420	sadness	ah, if I were but at the castle of the golden sun.
+421	surprise	And hardly had the words passed his lips than he was standing on a high mountain before the gate of the castle.
+422	neutral	He entered and went through all the rooms, until in the last he found the king's daughter.
+423	surprise	But how shocked he was when he saw her.
+424	neutral	She had an ashen-gray face full of wrinkles, bleary eyes, and red hair.
+425	surprise	"Are you the king's daughter,
+426	surprise	whose beauty the whole world praises?
+427	neutral	cried he.
+428	neutral	"Ah,"
+429	neutral	she answered,
+430	sadness	"this is not my form, human eyes can only see me in this state of ugliness, but that you may know what I am like, look in the mirror
+431	neutral	-it does not let itself be misled -
+432	happiness	it will show you my image as it is in truth.
+433	surprise	She gave him the mirror in his hand, and he saw therein the likeness of the most beautiful maiden on earth,
+434	sadness	and saw, too, how the tears were rolling down her cheeks with grief.
+435	neutral	Then said he,
+436	surprise	"how can you be set free?"
+438	neutral	She said,
+439	happiness	"he who gets the crystal ball, and holds it before the enchanter, will destroy his power with it, and I shall resume my true shape."
+440	neutral	"Ah,"
+441	neutral	she added,
+442	sadness	"so many have already gone to meet death for this, and you are so young,
+443	fear	I grieve that you should encounter such great danger."
+445	neutral	said he,
+447	neutral	"You shall know everything,"
+448	neutral	said the king's daughter,
+449	neutral	"when you descend the mountain on which the castle stands,"
+450	fear	"a wild bull will stand below by a spring, and you must fight with it,
+451	neutral	and if you have the luck to kill it, a fiery bird will spring out of it,
+452	neutral	which bears in its body a red-hot egg, and in the egg the crystal ball lies as its yolk.
+453	neutral	The bird, however, will not let the egg fall until forced to do so, and if it falls on the ground,
+454	neutral	it will flame up and burn everything that is near, and even the egg itself will melt, and with it the crystal ball,
+455	fear	and then your trouble will have been in vain.
+456	neutral	The youth went down to the spring, where the bull snorted and bellowed at him.
+458	fear	Instantly a fiery bird arose from it and was about to fly away,
+459	happiness	but the young man's brother, the eagle, who was passing between the clouds, swooped down, hunted it away to the sea,
+460	happiness	and struck it with his beak until, in its extremity, it let the egg fall.
+461	surprise	The egg, however, did not fall into the sea,
+462	fear	but on a fisherman's hut which stood on the shore and the hut began at once to smoke and was about to break out in flames.
+463	happiness	Then arose in the sea waves as high as a house, which streamed over the hut, and subdued the fire.
+464	neutral	The other brother, the whale, had come swimming to them,
+465	neutral	and had driven the water up on high.
+466	happiness	When the fire was extinguished, the youth sought for the egg and happily found it,
+467	happiness	it was not yet melted, but the shell was broken by being so suddenly cooled with the water, and he could take out the crystal ball unhurt.
+468	neutral	When the youth went to the enchanter and held it before him,
+469	neutral	the latter said,
+470	happiness	my power is destroyed, and from this time forth you are the king of the castle of the golden sun.
+471	happiness	With this you can likewise give back to your brothers their human form.
+472	neutral	Then the youth hastened to the king's daughter,
+473	happiness	and when he entered the room, she was standing there in the full splendor of her beauty, and joyfully they exchanged rings with each other.
+474	neutral	The Emperor's New Suit	
+476	happiness	his only ambition was to be always well dressed.	
+479	neutral	He had a coat for every hour of the day;	
+480	neutral	and as one would say of a king	
+481	neutral	"He is in his cabinet,"	
+482	neutral	so one could say of him,	
+483	neutral	"The emperor is in his dressing-room."	
+484	happiness	The great city where he resided was very gay;	
+485	neutral	every day many strangers from all parts of the globe arrived.	
+486	neutral	One day two swindlers came to this city;	
+487	neutral	they made people believe that they were weavers, and declared they could manufacture the finest cloth to be imagined.	
+488	neutral	Their colours and patterns, they said, were not only exceptionally beautiful,	
+489	surprise	but the clothes made of their material possessed the wonderful quality of being invisible to any man who was unfit for his office or unpardonably stupid.	
+491	neutral	thought the emperor.	
+492	happiness	"If I were to be dressed in a suit made of this cloth I should be able to find out which men in my empire were unfit for their places,	
+493	happiness	and I could distinguish the clever from the stupid.	
+495	neutral	And he gave a large sum of money to the swindlers, in advance, that they should set to work without any loss of time.	
+496	neutral	They set up two looms, and pretended to be very hard at work,	
+497	fear	but they did nothing whatever on the looms.	
+498	neutral	They asked for the finest silk and the most precious gold-cloth;	
+499	neutral	all they got they did away with, and worked at the empty looms till late at night.	
+500	fear	"I should very much like to know how they are getting on with the cloth,"	
+501	neutral	thought the emperor.	
+502	fear	But he felt rather uneasy when he remembered that he who was not fit for his office could not see it.	
+504	neutral	yet he thought it advisable to send somebody else first to see how matters stood.	
+505	neutral	Everybody in the town knew what a remarkable quality the stuff possessed,	
+506	fear	and all were anxious to see how bad or stupid their neighbours were.	
+507	neutral	"I shall send my honest old minister to the weavers,"	
+508	neutral	thought the emperor.	
+510	neutral	The good old minister went into the room where the swindlers sat before the empty looms.	
+511	fear	"Heaven preserve us!"	
+512	neutral	he thought, and opened his eyes wide,	
+513	fear	"I cannot see anything at all,"	
+514	neutral	but he did not say so.	
+515	neutral	Both swindlers requested him to come near,	
+516	neutral	and asked him if he did not admire the exquisite pattern and the beautiful colours, pointing to the empty looms.	
+517	fear	The poor old minister tried his very best, but he could see nothing, for there was nothing to be seen.	
+518	fear	"Oh dear,"	
+519	neutral	he thought,	
+520	fear	"can I be so stupid?	
+522	fear	Is it possible that I am not fit for my office?	
+524	neutral	"Now, have you got nothing to say?"	
+525	neutral	said one of the swindlers,	
+526	neutral	while he pretended to be busily weaving.	
+528	neutral	replied the old minister looking through his glasses.	
+531	neutral	"We are pleased to hear that,"	
+532	neutral	said the two weavers, and described to him the colours and explained the curious pattern.	
+533	neutral	The old minister listened attentively, that he might relate to the emperor what they said;	
+534	neutral	and so he did.	
+535	neutral	Now the swindlers asked for more money, silk and gold-cloth, which they required for weaving.	
+536	neutral	They kept everything for themselves, and not a thread came near the loom, but they continued, as hitherto, to work at the empty looms.	
+537	neutral	Soon afterwards the emperor sent another honest courtier to the weavers to see how they were getting on, and if the cloth was nearly finished.	
+538	fear	Like the old minister, he looked and looked but could see nothing, as there was nothing to be seen.	
+539	neutral	"Is it not a beautiful piece of cloth?"	
+542	neutral	said the man.	
+543	fear	"It is therefore my good appointment for which I am not fit.	
+545	happiness	and he praised the cloth, which he did not see, and expressed his joy at the beautiful colours and the fine pattern.	
+547	neutral	he said to the emperor.	
+549	fear	At last the emperor wished to see it himself, while it was still on the loom.	
+550	neutral	With a number of courtiers, including the two who had already been there, he went to the two clever swindlers,	
+551	neutral	who now worked as hard as they could, but without using any thread.	
+552	happiness	"Is it not magnificent?"	
+553	neutral	said the two old statesmen who had been there before.	
+554	happiness	"Your Majesty must admire the colours and the pattern."	
+555	fear	And then they pointed to the empty looms, for they imagined the others could see the cloth.	
+556	neutral	"What is this?"	
+557	neutral	thought the emperor,	
+558	fear	"I do not see anything at all.	
+559	fear	That is terrible!	
+560	fear	Am I stupid?	
+561	fear	Am I unfit to be emperor?	
+562	fear	That would indeed be the most dreadful thing that could happen to me."	
+563	neutral	"Really,"	
+564	neutral	he said, turning to the weavers,	
+565	happiness	"your cloth has our most gracious approval;"	
+566	fear	and nodding contentedly he looked at the empty loom, for he did not like to say that he saw nothing.	
+567	fear	All his attendants, who were with him, looked and looked, and although they could not see anything more than the others, they said, like the emperor,	
+568	happiness	"It is very beautiful."	
+571	neutral	one heard them say;	
+572	happiness	everybody seemed to be delighted, and the emperor appointed the two swindlers	
+573	neutral	"Imperial Court weavers."	
+574	neutral	The whole night previous to the day on which the procession was to take place, the swindlers pretended to work, and burned more than sixteen candles.	
+575	neutral	People should see that they were busy to finish the emperor's new suit.	
+576	neutral	They pretended to take the cloth from the loom, and worked about in the air with big scissors, and sewed with needles without thread, and said at last:	
+577	happiness	"The emperor's new suit is ready now."	
+578	neutral	The emperor and all his barons then came to the hall;	
+579	neutral	the swindlers held their arms up as if they held something in their hands and said:	
+580	neutral	"These are the trousers!"	
+581	neutral	"This is the coat!"	
+582	neutral	"and here is the cloak!"	
+583	neutral	and so on.	
+584	happiness	"They are all as light as a cobweb, and one must feel as if one had nothing at all upon the body;	
+585	happiness	but that is just the beauty of them."	
+587	neutral	said all the courtiers;	
+589	neutral	"Does it please your Majesty now to graciously undress,"	
+590	neutral	said the swindlers,	
+592	neutral	The emperor undressed, and the swindlers pretended to put the new suit upon him, one piece after another;	
+593	neutral	and the emperor looked at himself in the glass from every side.	
+596	neutral	said all.	
+600	neutral	The master of the ceremonies announced that the bearers of the canopy, which was to be carried in the procession, were ready.	
+602	neutral	said the emperor.	
+604	fear	Then he turned once more to the looking-glass, that people should think he admired his garments.	
+605	neutral	The chamberlains, who were to carry the train, stretched their hands to the ground as if they lifted up a train, and pretended to hold something in their hands;	
+606	fear	they did not like people to know that they could not see anything.	
+607	happiness	The emperor marched in the procession under the beautiful canopy,	
+608	neutral	and all who saw him in the street and out of the windows exclaimed:	
+612	fear	Nobody wished to let others know he saw nothing, for then he would have been unfit for his office or too stupid.	
+614	surprise	"But he has nothing on at all,"	
+615	neutral	said a little child at last.	
+616	fear	"Good heavens! listen to the voice of an innocent child,"	
+617	neutral	said the father, and one whispered to the other what the child had said.	
+618	happiness	"But he has nothing on at all,"	
+619	neutral	cried at last the whole people.	
+620	anger	That made a deep impression upon the emperor, for it seemed to him that they were right;	
+621	neutral	but he thought to himself,	
+622	sadness	"Now I must bear up to the end."	
+624	neutral	The Frog Prince
+625	neutral	One fine evening a young princess put on her bonnet and clogs, and went out to take a walk by herself in a wood;
+626	neutral	and when she came to a cool spring of water with a rose in the middle of it,<br>she sat herself down to rest a while.
+627	neutral	Now she had a golden ball in her hand, which was her favourite plaything;
+628	neutral	and she was always tossing it up into the air, and catching it again as it fell.
+629	neutral	After a time she threw it up so high that she missed catching it as it fell;
+630	neutral	and the ball bounded away, and rolled along on the ground, until at last it fell down into the spring.
+631	neutral	The princess looked into the spring after her ball,
+632	sadness	but it was very deep, so deep that she could not see the bottom of it.
+633	sadness	She began to cry, and said,
+634	sadness	"Alas! if I could only get my ball again, I would give all my fine clothes and jewels, and everything that I have in the world."
+635	neutral	Whilst she was speaking,
+636	neutral	a frog put its head out of the water,
+637	neutral	and said,
+638	fear	"Princess, why do you weep so bitterly?"
+639	neutral	"Alas!"
+640	neutral	said she,
+641	sadness	"what can you do for me, you nasty frog?"
+642	neutral	"My golden ball has fallen into the spring."
+643	neutral	The frog said,
+644	disgust	"I do not want your pearls, and jewels, and fine clothes;"
+645	happiness	"but if you will love me, and let me live with you and eat from off your golden plate, and sleep on your bed, I will bring you your ball again."
+646	neutral	"What nonsense,"
+647	neutral	thought the princess,
+648	anger	"this silly frog is talking!
+649	happiness	He can never even get out of the spring to visit me,
+650	neutral	though he may be able to get my ball for me,
+651	neutral	and therefore I will tell him he shall have what he asks."
+652	neutral	So she said to the frog,
+653	neutral	"Well, if you will bring me my ball, I will do all you ask."
+654	neutral	Then the frog put his head down, and dived deep under the water;
+655	neutral	and after a little while he came up again, with the ball in his mouth, and threw it on the edge of the spring.
+656	neutral	As soon as the young princess saw her ball, she ran to pick it up;
+657	neutral	and she was so overjoyed to have it in her hand again, that she never thought of the frog,
+658	neutral	but ran home with it as fast as she could.
+659	neutral	The frog called after her,
+660	anger	"Stay, princess, and take me with you as you said,"
+661	neutral	But she did not stop to hear a word.
+662	neutral	The next day, just as the princess had sat down to dinner, she heard a strange noise
+663	neutral	- tap, tap - plash, plash -
+664	neutral	as if something was coming up the marble staircase,
+665	neutral	and soon afterwards there was a gentle knock at the door,
+666	neutral	and a little voice cried out and said:
+668	neutral	And mind the words that thou and I said.
+669	surprise	By the fountain cool, in the greenwood shade."
+670	neutral	Then the princess ran to the door and opened it,
+671	surprise	and there she saw the frog, whom she had quite forgotten.
+672	fear	At this sight she was sadly frightened,
+673	neutral	and shutting the door as fast as she could came back to her seat.
+674	neutral	The king, her father, seeing that something had frightened her, asked her what was the matter.
+675	neutral	"There is a nasty frog,"
+676	neutral	said she,
+677	fear	"at the door, that lifted my ball for me out of the spring this morning.
+678	fear	"I told him that he should live with me here, thinking that he could never get out of the spring;
+679	fear	but there he is at the door, and he wants to come in."
+680	neutral	While she was speaking the frog knocked again at the door, and said:
+681	happiness	"Open the door, my princess dear, open the door to thy true love here!
+683	neutral	Then the king said to the young princess,
+686	neutral	She did so, and the frog hopped into the room, and then straight on
+687	neutral	- tap, tap - plash, plash -
+688	neutral	from the bottom of the room to the top, till he came up close to the table where the princess sat.
+689	neutral	"Pray lift me upon chair,"
+690	neutral	said he to the princess,
+691	neutral	"and let me sit next to you."
+692	neutral	As soon as she had done this, the frog said,
+693	neutral	"Put your plate nearer to me, that I may eat out of it."
+694	neutral	This she did, and when he had eaten as much as he could, he said,
+695	neutral	"Now I am tired;
+696	neutral	carry me upstairs, and put me into your bed."
+697	neutral	And the princess, though very unwilling, took him up in her hand, and put him upon the pillow of her own bed, where he slept all night long.
+698	neutral	As soon as it was light the frog jumped up, hopped downstairs, and went out of the house.
+699	neutral	"Now, then,"
+700	neutral	thought the princess,
+701	anger	"at last he is gone, and I shall be troubled with him no more."
+702	neutral	But she was mistaken;
+703	neutral	for when night came again she heard the same tapping at the door;
+704	neutral	and the frog came once more, and said:
+707	neutral	And when the princess opened the door the frog came in, and slept upon her pillow as before, till the morning broke.
+708	neutral	And the third night he did the same.
+709	surprise	But when the princess awoke on the following morning she was astonished to see,
+710	neutral	instead of the frog,
+711	surprise	a handsome prince, gazing on her with the most beautiful eyes she had ever seen and standing at the head of her bed.
+713	sadness	and that he had been fated so to abide till some princess should take him out of the spring,
+714	neutral	and let him eat from her plate,
+715	neutral	and sleep upon her bed for three nights.
+716	neutral	"You,"
+717	neutral	said the prince,
+720	neutral	The young princess, you may be sure, was not long in saying "Yes" to all this;
+721	surprise	and as they spoke a brightly coloured coach drove up, with eight beautiful horses, decked with plumes of feathers and a golden harness;
+722	surprise	and behind the coach rode the prince's servant, faithful Heinrich, who had bewailed the misfortunes of his dear master during his enchantment so long and so bitterly, that his heart had well-nigh burst.
+723	happiness	They then took leave of the king, and got into the coach with eight horses, and all set out, full of joy and merriment, for the prince's kingdom, which they reached safely;
+724	happiness	and there they lived happily a great many years.
+725	neutral	The Image of the Lost Soul
+726	neutral	There were a number of carved stone figures placed at intervals along the parapets of the old Cathedral;
+727	neutral	some of them represented angels, others kings and bishops, and nearly all were in attitudes of pious exaltation and composure.
+728	neutral	But one figure, low down on the cold north side of the building, had neither crown, mitre, not nimbus, and its face was hard and bitter and downcast;
+730	neutral	declared the fat blue pigeons that roosted and sunned themselves all day on the ledges of the parapet;
+731	neutral	but the old belfry jackdaw,
+732	fear	who was an authority on ecclesiastical architecture,
+734	neutral	And there the matter rested.
+735	neutral	One autumn day there fluttered on to the Cathedral roof a slender,
+737	neutral	It tried to rest its tired feet under the shade of a great angel-wing or to nestle in the sculptured folds of a kingly robe,
+738	sadness	but the fat pigeons hustled it away from wherever it settled,
+739	fear	and the noisy sparrow-folk drove it off the ledges.
+740	neutral	No respectable bird sang with so much feeling, they cheeped one to another,
+741	sadness	and the wanderer had to move on.
+742	neutral	Only the effigy of the Lost Soul offered a place of refuge.
+743	neutral	The pigeons did not consider it safe to perch on a projection that leaned so much out of the perpendicular, and was, besides, too much in the shadow.
+744	neutral	The figure did not cross its hands in the pious attitude of the other graven dignitaries,
+745	neutral	but its arms were folded as in defiance and their angle made a snug resting-place for the little bird.
+746	neutral	Every evening it crept trustfully into its corner against the stone breast of the image,
+747	fear	and the darkling eyes seemed to keep watch over its slumbers.
+750	neutral	And, it may have been the work of wind and weather, or some other influence,
+751	surprise	but the wild drawn face seemed gradually to lose some of its hardness and unhappiness.
+752	neutral	Every day, through the long monotonous hours,
+753	happiness	the song of his little guest would come up in snatches to the lonely watcher,
+754	neutral	and at evening, when the vesper-bell was ringing and the great grey bats slid out of their hiding-places in the belfry roof,
+756	happiness	Those were happy days for the Dark Image.
+757	neutral	Only the great bell of the Cathedral rang out daily its mocking message,
+758	sadness	"After joy . . . sorrow."
+759	neutral	The folk in the verger's lodge noticed a little brown bird flitting about the Cathedral precincts, and admired its beautiful singing.
+761	neutral	said they,
+763	neutral	They were poor, but they understood the principles of political economy.
+764	surprise	So they caught the bird and put it in a little wicker cage outside the lodge door.
+765	sadness	That night the little songster was missing from its accustomed haunt,
+766	sadness	and the Dark Image knew more than ever the bitterness of loneliness.
+767	fear	Perhaps his little friend had been killed by a prowling cat or hurt by a stone.
+768	sadness	Perhaps . . . perhaps he had flown elsewhere.
+769	neutral	But when morning came there floated up to him, through the noise and bustle of the Cathedral world,
+770	neutral	a faint heartaching message from the prisoner in the wicker cage far below.
+771	neutral	And every day, at high noon, when the fat pigeons were stupefied into silence after their midday meal and the sparrows were washing themselves in the street-puddles,
+772	neutral	the song of the little bird came up to the parapets
+773	sadness	a song of hunger and longing and hopelessness, a cry that could never be answered.
+774	neutral	The pigeons remarked, between mealtimes, that the figure leaned forward more than ever out of the perpendicular.
+775	fear	One day no song came up from the little wicker cage.
+776	neutral	It was the coldest day of the winter,
+777	sadness	and the pigeons and sparrows on the Cathedral roof looked anxiously on all sides for the scraps of food which they were dependent on in hard weather.
+778	neutral	"Have the lodge-folk thrown out anything on to the dust-heap?"
+779	neutral	inquired one pigeon of another which was peering over the edge of the north parapet.
+780	sadness	"Only a little dead bird,"
+781	neutral	was the answer.
+782	surprise	There was a crackling sound in the night on the Cathedral roof and a noise as of falling masonry.
+783	neutral	The belfry jackdaw said the frost was affecting the fabric, and as he had experienced many frosts it must have been so.
+784	sadness	In the morning it was seen that the Figure of the Lost Soul had toppled from its cornice and lay now in a broken mass on the dust heap outside the verger's lodge.
+785	neutral	"It is just as well,"
+786	neutral	cooed the fat pigeons, after they had peered at the matter for some minutes;
+787	happiness	"now we shall have a nice angel put up there."
+788	happiness	"Certainly they will put an angel there."
+789	sadness	"After joy . . . sorrow,"
+790	neutral	rang out the great bell.
+791	neutral	The lion and the mouse
+792	neutral	A small mouse crept up to a sleeping lion.
+794	neutral	"Since he's sleeping,"
+795	neutral	thought the mouse,
+796	happiness	"he'll never suspect I'm here!"
+797	neutral	With that, the little mouse climbed up onto the lion's tail, ran across its back, slid down its leg and jumped off of its paw.
+798	fear	The lion awoke and quickly caught the mouse between its claws.
+799	fear	"Please,"
+800	neutral	said the mouse,
+801	fear	"let me go and I'll come back and help you someday."
+802	neutral	The lion laughed,
+805	happiness	The lion laughed so hard he had to hold his belly!
+806	happiness	The mouse jumped to freedom and ran until she was far, far away.
+807	neutral	The next day, two hunters came to the jungle.
+808	fear	They went to the lion's lair.
+809	neutral	They set a huge rope snare.
+810	fear	When the lion came home that night, he stepped into the trap.
+811	anger	He roared!
+812	sadness	He wept!
+813	sadness	But he couldn't pull himself free.
+815	neutral	The mouse eyed the trap and noticed the one thick rope that held it together.
+816	happiness	She began nibbling and nibbling until the rope broke.
+817	neutral	The lion was able to shake off the other ropes that held him tight.
+818	happiness	He stood up free again!
+819	neutral	The lion turned to the mouse and said,
+820	sadness	"Dear friend, I was foolish to ridicule you for being small.
+821	happiness	You helped me by saving my life after all!"
+822	neutral	The Little Match-Seller
+823	sadness	It was terribly cold and nearly dark on the last evening of the old year, and the snow was falling fast.
+824	sadness	In the cold and the darkness, a poor little girl, with bare head and naked feet, roamed through the streets.
+828	neutral	One of the slippers she could not find,
+829	anger	and a boy seized upon the other and ran away with it,
+830	neutral	saying that he could use it as a cradle, when he had children of his own.
+832	neutral	In an old apron she carried a number of matches, and had a bundle of them in her hands.
+833	sadness	No one had bought anything of her the whole day, nor had any one given here even a penny.
+834	sadness	Shivering with cold and hunger, she crept along;
+836	neutral	The snowflakes fell on her long, fair hair, which hung in curls on her shoulders, but she regarded them not.
+837	neutral	Lights were shining from every window, and there was a savory smell of roast goose, for it was New-year's eve.
+838	neutral	Yes, she remembered that.
+839	neutral	In a corner, between two houses, one of which projected beyond the other, she sank down and huddled herself together.
+840	sadness	She had drawn her little feet under her, but she could not keep off the cold;
+841	sadness	and she dared not go home, for she had sold no matches, and could not take home even a penny of money.
+842	anger	Her father would certainly beat her;
+843	neutral	besides, it was almost as cold at home as here,
+844	sadness	for they had only the roof to cover them, through which the wind howled,
+845	neutral	although the largest holes had been stopped up with straw and rags.
+846	sadness	Her little hands were almost frozen with the cold.
+847	happiness	Ah! perhaps a burning match might be some good,
+848	happiness	if she could draw it from the bundle and strike it against the wall, just to warm her fingers.
+849	neutral	She drew one out
+850	happiness	"scratch!" how it sputtered as it burnt!
+851	happiness	It gave a warm, bright light, like a little candle, as she held her hand over it.
+852	happiness	It was really a wonderful light.
+853	neutral	It seemed to the little girl that she was sitting by a large iron stove, with polished brass feet and a brass ornament.
+854	happiness	How the fire burned!
+855	happiness	and seemed so beautifully warm that the child stretched out her feet as if to warm them, when,
+856	surprise	lo! the flame of the match went out,
+857	sadness	the stove vanished,
+858	sadness	and she had only the remains of the half-burnt match in her hand.
+859	neutral	She rubbed another match on the wall.
+860	neutral	It burst into a flame, and where its light fell upon the wall it became as transparent as a veil, and she could see into the room.
+861	happiness	The table was covered with a snowy white table-cloth, on which stood a splendid dinner service, and a steaming roast goose, stuffed with apples and dried plums.
+862	happiness	And what was still more wonderful, the goose jumped down from the dish and waddled across the floor, with a knife and fork in its breast, to the little girl.
+863	sadness	Then the match went out, and there remained nothing but the thick, damp, cold wall before her.
+864	happiness	She lighted another match, and then she found herself sitting under a beautiful Christmas-tree.
+865	happiness	It was larger and more beautifully decorated than the one which she had seen through the glass door at the rich merchant's.
+866	happiness	Thousands of tapers were burning upon the green branches, and colored pictures, like those she had seen in the show-windows, looked down upon it all.
+867	anger	The little one stretched out her hand towards them, and the match went out.
+869	surprise	Then she saw a star fall, leaving behind it a bright streak of fire.
+870	sadness	"Some one is dying,"
+871	neutral	thought the little girl, for her old grandmother,
+874	neutral	She again rubbed a match on the wall, and the light shone round her;
+875	happiness	in the brightness stood her old grandmother, clear and shining, yet mild and loving in her appearance.
+876	happiness	"Grandmother,"
+877	neutral	cried the little one,
+878	sadness	"O take me with you;"
+879	sadness	"I know you will go away when the match burns out;"
+880	sadness	"you will vanish like the warm stove, the roast goose, and the large, glorious Christmas-tree."
+881	happiness	And she made haste to light the whole bundle of matches, for she wished to keep her grandmother there.
+883	happiness	She took the little girl in her arms, and they both flew upwards in brightness and joy far above the earth,
+884	happiness	where there was neither cold nor hunger nor pain, for they were with God.
+885	sadness	In the dawn of morning there lay the poor little one, with pale cheeks and smiling mouth, leaning against the wall;
+886	sadness	she had been frozen to death on the last evening of the year;
+887	sadness	and the New-year's sun rose and shone upon a little corpse!
+888	sadness	The child still sat, in the stiffness of death, holding the matches in her hand, one bundle of which was burnt.
+889	sadness	"She tried to warm herself,"
+890	neutral	said some.
+891	neutral	No one imagined what beautiful things she had seen,
+893	neutral	The Ox and the Frog
+894	neutral	A young frog set out on his first adventure.
+895	neutral	As he came out of the pond he saw a large ox grazing in a field.
+896	happiness	Having never before seen such a creature, he hopped excitedly to his father, the bullfrog,
+897	neutral	and said,
+898	surprise	"I have just seen the biggest frog in the world!
+899	disgust	"Humph!"
+900	neutral	said the bullfrog,
+902	neutral	and he puffed himself up.
+904	neutral	said the little frog.
+906	neutral	said the bullfrog, puffing himself up even larger.
+908	neutral	said the little frog
+909	anger	"Ridiculous!"
+910	neutral	said the bullfrog,
+911	neutral	who fancied himself much more important than he was.
+912	anger	"He couldn't be bigger than me!
+913	neutral	I'm the oldest frog in the pond.
+914	anger	I was here first!
+915	anger	Was he bigger than this?"
+916	neutral	He puffed and puffed himself up so much...
+917	surprise	he burst!
+918	neutral	The Princess and the pea
+920	neutral	Once upon a time there was a prince who wanted to marry a princess;
+922	neutral	but she would have to be a real princess.
+924	sadness	He travelled all over the world to find one, but nowhere could he get what he wanted.
+926	sadness	There were princesses enough, but it was difficult to find out whether they were real ones.
+928	sadness	There was always something about them that was not as it should be.
+930	sadness	So he came home again and was sad, for he would have liked very much to have a real princess.
+932	fear	One evening a terrible storm came on;
+934	fear	there was thunder and lightning, and the rain poured down in torrents.
+936	surprise	Suddenly a knocking was heard at the city gate, and the old king went to open it.
+938	surprise	It was a princess standing out there in front of the gate.
+940	happiness	But, good gracious!
+944	neutral	The water ran down from her hair and clothes;
+946	neutral	it ran down into the toes of her shoes and out again at the heels.
+948	happiness	And yet she said that she was a real princess.
+950	disgust	Well, we'll soon find that out, thought the old queen.
+952	neutral	But she said nothing, went into the bedroom, took all the bedding off the bedstead, and laid a pea on the bottom;
+954	neutral	then she took twenty mattresses and laid them on the pea, and then twenty eider-down beds on top of the mattresses.
+956	neutral	On this the princess had to lie all night.
+958	neutral	In the morning she was asked how she had slept.
+960	anger	"Oh, very badly!"
+962	neutral	said she.
+964	sadness	"I have scarcely closed my eyes all night."
+966	anger	"Heaven only knows what was in the bed, but I was lying on something hard, so that I am black and blue all over my body."
+968	anger	"It's horrible!"
+970	happiness	Now they knew that she was a real princess because she had felt the pea right through the twenty mattresses and the twenty eider-down beds.
+972	neutral	Nobody but a real princess could be as sensitive as that.
+974	happiness	So the prince took her for his wife, for now he knew that he had a real princess;
+976	neutral	and the pea was put in the museum, where it may still be seen, if no one has stolen it.
+978	neutral	The Selfish Giant
+979	happiness	Every afternoon, as they were coming from school, the children used to go and play in the Giant's garden.
+980	happiness	It was a large lovely garden, with soft green grass.
+982	happiness	The birds sat on the trees and sang so sweetly that the children used to stop their games in order to listen to them.
+983	happiness	"How happy we are here!"
+984	neutral	they cried to each other.
+985	fear	One day the Giant came back.
+986	neutral	He had been to visit his friend the Cornish ogre, and had stayed with him for seven years.
+987	neutral	After the seven years were over he had said all that he had to say, for his conversation was limited, and he determined to return to his own castle.
+988	neutral	When he arrived he saw the children playing in the garden.
+989	anger	"What are you doing here?"
+990	fear	he cried in a very gruff voice, and the children ran away.
+991	anger	"My own garden is my own garden,"
+992	neutral	said the Giant;
+993	anger	"any one can understand that, and I will allow nobody to play in it but myself."
+994	neutral	So he built a high wall all round it, and put up a notice-board.
+995	anger	"TRESPASSERS WILL BE PROSECUTED"
+996	anger	He was a very selfish Giant.
+997	sadness	The poor children had now nowhere to play.
+998	neutral	They tried to play on the road, but the road was very dusty and full of hard stones, and they did not like it.
+999	neutral	They used to wander round the high wall when their lessons were over, and talk about the beautiful garden inside.
+1000	sadness	"How happy we were there,"
+1001	neutral	they said to each other.
+1002	happiness	Then the Spring came, and all over the country there were little blossoms and little birds.
+1003	sadness	Only in the garden of the Selfish Giant it was still Winter.
+1004	sadness	The birds did not care to sing in it as there were no children, and the trees forgot to blossom.
+1005	happiness	Once a beautiful flower put its head out from the grass,
+1006	sadness	but when it saw the notice-board it was so sorry for the children that it slipped back into the ground again, and went off to sleep.
+1007	neutral	The only people who were pleased were the Snow and the Frost.
+1008	happiness	"Spring has forgotten this garden,"
+1009	neutral	they cried,
+1010	happiness	"so we will live here all the year round."
+1011	neutral	The Snow covered up the grass with her great white cloak, and the Frost painted all the trees silver.
+1012	neutral	Then they invited the North Wind to stay with them, and he came.
+1013	neutral	He was wrapped in furs, and he roared all day about the garden, and blew the chimney-pots down.
+1014	happiness	"This is a delightful spot,"
+1015	neutral	he said,
+1016	fear	"we must ask the Hail on a visit."
+1017	neutral	So the Hail came.
+1018	fear	Every day for three hours he rattled on the roof of the castle till he broke most of the slates, and then he ran round and round the garden as fast as he could go.
+1019	fear	He was dressed in grey, and his breath was like ice.
+1020	fear	"I cannot understand why the Spring is so late in coming,"
+1021	neutral	said the Selfish Giant, as he sat at the window and looked out at his cold white garden;
+1022	happiness	I hope there will be a change in the weather."
+1023	sadness	But the Spring never came, not the Summer.
+1024	neutral	The Autumn gave golden fruit to every garden, but to the Giant's garden she gave none.
+1025	disgust	"He is too selfish,"
+1026	neutral	she said.
+1027	neutral	So it was always Winter there, and the North Wind, and the Hail, and the Frost, and the Snow danced about through the trees.
+1028	happiness	One morning the Giant was lying awake in bed when he heard some lovely music.
+1029	happiness	It sounded so sweet to his ears that he thought it must be the King's musicians passing by.
+1030	happiness	It was really only a little linnet singing outside his window,
+1031	happiness	but it was so long since he had heard a bird sing in his garden that it seemed to him to be the most beautiful music in the world.
+1032	happiness	Then the Hail stopped dancing over his head, and the North Wind ceased roaring, and a delicious perfume came to him through the open casement.
+1033	happiness	"I believe the Spring has come at last,"
+1034	neutral	said the Giant;
+1035	happiness	and he jumped out of bed and looked out.
+1036	surprise	What did he see?
+1037	happiness	He saw a most wonderful sight.
+1038	happiness	Through a little hole in the wall the children had crept in, and they were sitting in the branches of the trees.
+1039	happiness	In every tree that he could see there was a little child.
+1040	happiness	And the trees were so glad to have the children back again that they had covered themselves with blossoms, and were waving their arms gently above the children's heads.
+1041	happiness	The birds were flying about and twittering with delight, and the flowers were looking up through the green grass and laughing.
+1042	fear	It was a lovely scene, only in one corner it was still Winter.
+1043	fear	It was the farthest corner of the garden, and in it was standing a little boy.
+1044	sadness	He was so small that he could not reach up to the branches of the tree, and he was wandering all round it, crying bitterly.
+1045	sadness	The poor tree was still quite covered with frost and snow, and the North Wind was blowing and roaring above it.
+1046	happiness	"Climb up! little boy,"
+1047	neutral	said the Tree, and it bent its branches down as low as it could;
+1050	sadness	"How selfish I have been!"
+1051	neutral	he said;
+1052	sadness	"now I know why the Spring would not come here."
+1054	sadness	He was really very sorry for what he had done.
+1055	neutral	So he crept downstairs and opened the front door quite softly, and went out into the garden.
+1056	fear	But when the children saw him they were so frightened that they all ran away, and the garden became Winter again.
+1057	sadness	Only the little boy did not run, for his eyes were so full of tears that he died not see the Giant coming.
+1060	happiness	And the other children, when they saw that the Giant was not wicked any longer, came running back, and with them came the Spring.
+1063	happiness	And when the people were going to market at twelve o'clock they found the Giant playing with the children in the most beautiful garden they had ever seen.
+1064	happiness	All day long they played, and in the evening they came to the Giant to bid him good-bye.
+1065	fear	"But where is your little companion?"
+1066	neutral	he said:
+1067	neutral	"the boy I put into the tree."
+1069	neutral	"We don't know,"
+1070	neutral	answered the children;
+1071	neutral	"he has gone away."
+1073	neutral	said the Giant.
+1074	neutral	But the children said that they did not know where he lived, and had never seen him before;
+1075	sadness	and the Giant felt very sad.
+1076	neutral	Every afternoon, when school was over, the children came and played with the Giant.
+1077	sadness	But the little boy whom the Giant loved was never seen again.
+1079	sadness	"How I would like to see him!"
+1080	neutral	he used to say.
+1083	happiness	"I have many beautiful flowers,"
+1084	neutral	he said;
+1085	happiness	"but the children are the most beautiful flowers of all."
+1086	neutral	One winter morning he looked out of his window as he was dressing.
+1087	neutral	He did not hate the Winter now, for he knew that it was merely the Spring asleep, and that the flowers were resting.
+1088	surprise	Suddenly he rubbed his eyes in wonder, and looked and looked.
+1089	surprise	It certainly was a marvellous sight.
+1091	happiness	Its branches were all golden, and silver fruit hung down from them, and underneath it stood the little boy he had loved.
+1092	happiness	Downstairs ran the Giant in great joy, and out into the garden.
+1093	neutral	He hastened across the grass, and came near to the child.
+1094	anger	And when he came quite close his face grew red with anger, and he said,
+1095	anger	"Who have dared to wound there?"
+1096	sadness	For on the palms of the child's hands were the prints of two nails, and the prints of two nails were on the little feet.
+1097	anger	"Who have dared to wound there?"
+1098	neutral	cried the Giant;
+1099	anger	"tell me, that I may take my big sword and slay him."
+1100	neutral	"Nay!"
+1101	neutral	answered the child;
+1102	neutral	"but these are the wounds of Love."
+1103	surprise	"Who are you?"
+1104	happiness	said the Giant, and a strange awe fell on him, and he knelt before the little child.
+1105	neutral	And the child smiled on the Giant, and said to him,
+1107	sadness	And when the children ran in that afternoon, they found the Giant lying dead under the tree, all covered with white blossoms.
+1108	neutral	The Three Little Pigs
+1109	neutral	Once upon a time there were three little pigs, who left their mummy and daddy to see the world.
+1110	neutral	All summer long, they roamed through the woods and over the plains, playing games and having fun.
+1111	happiness	None were happier than the three little pigs, and they easily made friends with everyone.
+1113	neutral	but as summer drew to a close, they realized that folk were drifting back to their usual jobs, and preparing for winter.
+1114	neutral	Autumn came and it began to rain.
+1115	neutral	The three little pigs started to feel they needed a real home.
+1116	sadness	Sadly they knew that the fun was over now and they must set to work like the others, or they'd be left in the cold and rain, with no roof over their heads.
+1117	neutral	They talked about what to do, but each decided for himself.
+1118	neutral	The laziest little pig said he'd build a straw hut.
+1120	neutral	he said.
+1121	neutral	The others disagreed.
+1122	fear	"It's too fragile,"
+1123	neutral	they said disapprovingly,
+1124	neutral	but he refused to listen.
+1125	neutral	Not quite so lazy, the second little pig went in search of planks of seasoned wood.
+1126	neutral	"Clunk! Clunk! Clunk!"
+1127	neutral	It took him two days to nail them together.
+1128	neutral	But the third little pig did not like the wooden house.
+1129	anger	"That's not the way to build a house!"
+1130	neutral	he said.
+1132	neutral	The days went by, and the wisest little pig's house took shape, brick by brick.
+1133	neutral	From time to time, his brothers visited him, saying with a chuckle.
+1134	anger	"Why are you working so hard?
+1138	anger	And then I'll come and play!"
+1139	neutral	he said.
+1140	anger	"I shall not be foolish like you!
+1141	anger	For he who laughs last, laughs longest!"
+1142	fear	It was the wisest little pig that found the tracks of a big wolf in the neighborhood.
+1143	fear	The little pigs rushed home in alarm.
+1144	fear	Along came the wolf, scowling fiercely at the laziest pig's straw hut.
+1145	fear	"Come out!"
+1146	neutral	ordered the wolf, his mouth watering.
+1147	fear	"I want to speak to you!"
+1148	fear	"I'd rather stay where I am!"
+1149	neutral	replied the little pig in a tiny voice.
+1150	anger	"I'll make you come out!"
+1151	anger	growled the wolf angrily, and puffing out his chest, he took a very deep breath.
+1152	fear	Then he blew with all his might, right onto the house.
+1153	fear	And all the straw the silly pig had heaped against some thin poles, fell down in the great blast.
+1154	anger	When he realized that the little pig was escaping, the wolf grew wild with rage.
+1155	anger	"Come back!"
+1156	anger	he roared, trying to catch the pig as he ran into the wooden house.
+1157	fear	The other little pig greeted his brother, shaking like a leaf.
+1158	fear	"I hope this house won't fall down!
+1160	neutral	Outside, the wolf could hear the little pigs' words.
+1161	neutral	Starving as he was, at the idea of a two course meal, he rained blows on the door.
+1162	anger	"Open up! Open up!
+1163	anger	I only want to speak to you!"
+1164	fear	Inside, the two brothers wept in fear and did their best to hold the door fast against the blows.
+1165	neutral	Then the furious wolf braced himself a new effort:
+1166	neutral	he drew in a really enormous breath, and went ...
+1167	surprise	WHOOOOO!
+1168	fear	The wooden house collapsed like a pack of cards.
+1169	happiness	Luckily, the wisest little pig had been watching the scene from the window of his own brick house, and he rapidly opened the door to his fleeing brothers.
+1170	anger	And not a moment too soon, for the wolf was already hammering furiously on the door.
+1171	neutral	This time, the wolf had grave doubts.
+1172	neutral	This house had a much more solid air than the others.
+1173	neutral	He blew once, he blew again and then for a third time.
+1174	sadness	But all was in vain.
+1175	neutral	For the house did not budge an inch.
+1176	happiness	The three little pigs watched him and their fear began to fade.
+1177	neutral	Quite exhausted by his efforts, the wolf decided to try one of his tricks.
+1178	neutral	He scrambled up a nearby ladder, on to the roof to have a look at the chimney.
+1179	neutral	However, the wisest little pig had seen this ploy, and he quickly said.
+1181	neutral	With his long legs thrust down the chimney, the wolf was not sure if he should slide down the black hole.
+1182	neutral	It wouldn't be easy to get in, but the sound of the little pigs' voices below only made him feel hungrier.
+1183	sadness	"I'm dying of hunger!
+1185	neutral	And he let himself drop.
+1186	surprise	But landing was rather hot, too hot!
+1187	fear	The wolf landed in the fire, stunned by his fall.
+1188	fear	The flames licked his hairy coat and his tail became a flaring torch.
+1189	sadness	"Never again!<br>Never again will I go down a chimney"
+1190	neutral	he squealed,
+1191	neutral	as he tried to put out the flames in his tail.
+1192	neutral	Then he ran away as fast as he could. 
+1193	happiness	The three happy little pigs, dancing round and round the yard, began to sing.
+1194	happiness	"Tra-la-la! Tra-la-la!
+1195	happiness	The wicked black wolf will never come back...!"
+1196	neutral	From that terrible day on, the wisest little pig's brothers set to work with a will.
+1197	happiness	In less than no time, up went the two new brick houses.
+1198	fear	The wolf did return once to roam in the neighborhood,
+1199	happiness	but when he caught sight of three chimneys, he remembered the terrible pain of a burnt tail, and he left for good.
+1200	happiness	Now safe and happy, the wisest little pig called to his brothers.
+1201	happiness	"No more work! Come on, let's go and play!"
+1202	neutral	The Tortoise and the Hare
+1203	happiness	The Hare was once boasting of his speed before the other animals.
+1205	neutral	Said he.
+1206	neutral	"when I put forth my full speed."
+1208	neutral	The Tortoise said quietly,
+1211	neutral	said the Hare;
+1213	happiness	"Keep your boasting till you've won,"
+1214	neutral	answered the Tortoise.
+1216	neutral	So a course was fixed and a start was made.
+1217	neutral	The Hare darted almost out of sight at once, but soon stopped and, to show his contempt for the Tortoise, lay down to have a nap.
+1218	happiness	The Tortoise plodded on and plodded on,
+1219	neutral	and when the Hare awoke from his nap,
+1220	surprise	he saw the Tortoise just near the winning-post and could not run up in time to save the race.
+1221	neutral	Then the Tortoise said:
+1222	happiness	"Slow but steady progress wins the race."
+1223	neutral	The Twelve Dancing Princesses
+1224	neutral	There was a king who had twelve beautiful daughters.
+1225	neutral	They slept in twelve beds all in one room and when they went to bed, the doors were shut and locked up.
+1226	surprise	However, every morning their shoes were found to be quite worn through as if they had been danced in all night.
+1227	surprise	Nobody could find out how it happened, or where the princesses had been.
+1228	neutral	So the king made it known to all the land that if any person could discover the secret and find out where it was that the princesses danced in the night, he would have the one he liked best to take as his wife, and would be king after his death.
+1229	sadness	But whoever tried and did not succeed, after three days and nights, they would be put to death.
+1230	neutral	A king's son soon came.
+1231	neutral	He was well entertained, and in the evening was taken to the chamber next to the one where the princesses lay in their twelve beds.
+1232	neutral	There he was to sit and watch where they went to dance;
+1233	neutral	in order that nothing could happen without him hearing it, the door of his chamber was left open.
+1234	neutral	But the king's son soon fell asleep;
+1235	neutral	and when he awoke in the morning he found that the princesses had all been dancing, for the soles of their shoes were full of holes.
+1236	fear	The same thing happened the second and third night and so the king ordered his head to be cut off.
+1237	neutral	After him came several others;
+1238	sadness	but they all had the same luck, and all lost their lives in the same way.
+1239	neutral	Now it happened that an old soldier, who had been wounded in battle and could fight no longer, passed through the country where this king reigned, and as he was travelling through a wood, he met an old woman, who asked him where he was going.
+1240	neutral	"I hardly know where I am going, or what I had better do,"
+1241	neutral	said the soldier;
+1242	happiness	but I think I would like to find out where it is that the princesses dance, and then in time I might be a king.
+1243	neutral	"Well,"
+1244	neutral	said the old woman,
+1245	happiness	"that is not a very hard task:"
+1246	happiness	"only take care not to drink any of the wine which one of the princesses will bring to you in the evening;"
+1247	surprise	"and as soon as she leaves you pretend to be fast asleep."
+1248	neutral	Then she gave him a cloak, and said,
+1249	surprise	"As soon as you put that on you will become invisible, and you will then be able to follow the princesses wherever they go."
+1251	neutral	He was as well received as the others had been, and the king ordered fine royal robes to be given him;
+1252	neutral	and when the evening came he was led to the outer chamber.
+1253	neutral	Just as he was going to lie down, the eldest of the princesses brought him a cup of wine;
+1254	happiness	but the soldier threw it all away secretly, taking care not to drink a drop.
+1255	neutral	Then he laid himself down on his bed, and in a little while began to snore very loudly as if he was fast asleep.
+1256	happiness	When the twelve princesses heard this they laughed heartily;
+1257	neutral	and the eldest said,
+1259	happiness	Then they rose and opened their drawers and boxes, and took out all their fine clothes, and dressed themselves at the mirror, and skipped about as if they were eager to begin dancing.
+1260	neutral	But the youngest said,
+1261	fear	"I don't know why it is, but while you are so happy I feel very uneasy;"
+1262	fear	"I am sure some mischance will befall us."
+1264	neutral	said the eldest,
+1268	neutral	When they were all ready, they went and looked at the soldier;
+1269	neutral	but he snored on, and did not stir hand or foot:
+1270	happiness	so they thought they were quite safe.
+1271	surprise	Then the eldest went up to her own bed and clapped her hands, and the bed sank into the floor and a trap-door flew open.
+1272	neutral	The soldier saw them going down through the trap-door one after another, the eldest leading the way;
+1274	fear	However, in the middle of the stairs he trod on the gown of the youngest princess, and she cried out to her sisters,
+1275	fear	"All is not right;"
+1276	fear	"someone took hold of my gown."
+1277	anger	"You silly creature!"
+1278	neutral	said the eldest,
+1279	anger	"it is nothing but a nail in the wall."
+1280	happiness	Down they all went, and at the bottom they found themselves in a most delightful grove of trees;
+1281	happiness	and the leaves were all of silver, and glittered and sparkled beautifully.
+1282	neutral	The soldier wished to take away some token of the place;
+1283	surprise	so he broke off a little branch, and there came a loud noise from the tree.
+1284	neutral	Then the youngest daughter said again,
+1285	fear	"I am sure all is not right, did not you hear that noise?"
+1286	fear	"That never happened before."
+1287	neutral	But the eldest said,
+1288	happiness	"It is only our princes, who are shouting for joy at our approach."
+1289	neutral	They came to another grove of trees, where all the leaves were of gold;
+1290	neutral	and afterwards to a third, where the leaves were all glittering diamonds.
+1291	neutral	And the soldier broke a branch from each;
+1292	fear	and every time there was a loud noise, which made the youngest sister tremble with fear.
+1293	neutral	But the eldest still said it was only the princes, who were crying for joy.
+1294	neutral	They went on till they came to a great lake;
+1295	neutral	and at the side of the lake there lay twelve little boats with twelve handsome princes in them, who seemed to be waiting there for the princesses.
+1296	neutral	One of the princesses went into each boat, and the soldier stepped into the same boat as the youngest.
+1297	neutral	As they were rowing over the lake, the prince who was in the boat with the youngest princess and the soldier said,
+1298	surprise	"I do not know why it is, but though I am rowing with all my might we do not get on so fast as usual, and I am quite tired:"
+1299	neutral	"the boat seems very heavy today."
+1300	neutral	"It is only the heat of the weather,"
+1301	neutral	said the princess,
+1302	neutral	"I am very warm, too."
+1303	neutral	On the other side of the lake stood a fine, illuminated castle from which came the merry music of horns and trumpets.
+1304	neutral	There they all landed, and went into the castle, and each prince danced with his princess;
+1305	neutral	and the soldier, who was still invisible, danced with them too.
+1306	surprise	When any of the princesses had a cup of wine set by her, he drank it all up, so that when she put the cup to her mouth it was empty.
+1307	fear	At this, too, the youngest sister was terribly frightened, but the eldest always silenced her.
+1308	neutral	They danced on till three o'clock in the morning, and then all their shoes were worn out, so that they were obliged to leave.
+1309	neutral	The princes rowed them back again over the lake
+1310	surprise	(but this time the soldier placed himself in the boat with the eldest princess);
+1311	neutral	and on the opposite shore they took leave of each other, the princesses promising to come again the next night.
+1312	neutral	When they came to the stairs, the soldier ran on before the princesses, and laid himself down.
+1313	neutral	And as the twelve, tired sisters slowly came up, they heard him snoring in his bed and they said,
+1314	happiness	"Now all is quite safe".
+1315	neutral	Then they undressed themselves, put away their fine clothes, pulled off their shoes, and went to bed.
+1316	neutral	In the morning the soldier said nothing about what had happened, but determined to see more of this strange adventure, and went again on the second and third nights.
+1317	neutral	Everything happened just as before:
+1318	neutral	the princesses danced till their shoes were worn to pieces, and then returned home.
+1319	neutral	On the third night the soldier carried away one of the golden cups as a token of where he had been.
+1320	neutral	As soon as the time came when he was to declare the secret, he was taken before the king with the three branches and the golden cup;
+1321	neutral	and the twelve princesses stood listening behind the door to hear what he would say.
+1322	neutral	The king asked him.
+1323	surprise	"Where do my twelve daughters dance at night?"
+1324	neutral	The soldier answered,
+1325	neutral	"With twelve princes in a castle underground."
+1326	neutral	And then he told the king all that had happened, and showed him the three branches and the golden cup which he had brought with him.
+1327	neutral	The king called for the princesses, and asked them whether what the soldier said was true and when they saw that they were discovered, and that it was of no use to deny what had happened, they confessed it all.
+1328	neutral	So the king asked the soldier which of the princesses he would choose for his wife;
+1329	neutral	and he answered,
+1330	happiness	"I am not very young, so I will have the eldest."
+1331	happiness	And they were married that very day, and the soldier was chosen to be the king's heir.
+1332	neutral	The Wicked Prince
+1333	fear	There lived once upon a time a wicked prince whose heart and mind were set upon conquering all the countries of the world, and on frightening the people;
+1334	anger	he devastated their countries with fire and sword,
+1335	anger	and his soldiers trod down the crops in the fields and destroyed the peasants huts by fire, so that the flames licked the green leaves off the branches, and the fruit hung dried up on the singed black trees.
+1336	fear	Many a poor mother fled, her naked baby in her arms, behind the still smoking walls of her cottage;
+1337	fear	but also there the soldiers followed her, and when they found her,
+1338	fear	she served as new nourishment to their diabolical enjoyments;
+1339	anger	demons could not possibly have done worse things than these soldiers!
+1340	anger	The prince was of opinion that all this was right, and that it was only the natural course which things ought to take.
+1341	fear	His power increased day by day, his name was feared by all, and fortune favoured his deeds.
+1342	anger	He brought enormous wealth home from the conquered towns, and gradually accumulated in his residence riches which could nowhere be equalled.
+1345	sadness	But they did not know what endless misery he had brought upon other countries,
+1346	sadness	nor did they hear the sighs and lamentations which rose up from the debris of the destroyed cities.
+1347	happiness	The prince often looked with delight upon his gold and his magnificent edifices, and thought, like the crowd:
+1348	happiness	"What a mighty prince!
+1351	anger	He made war with all his neighbours, and defeated them.
+1352	fear	The conquered kings were chained up with golden fetters to his chariot when he drove through the streets of his city.
+1353	neutral	These kings had to kneel at his and his courtiers' feet when they sat at table, and live on the morsels which they left.
+1354	neutral	At last the prince had his own statue erected on the public places and fixed on the royal palaces;
+1356	neutral	but in this the priests opposed him, saying:
+1357	fear	"Prince, you are mighty indeed, but God's power is much greater than yours;
+1358	fear	we dare not obey your orders."
+1359	neutral	"Well,?
+1360	neutral	said the prince.
+1363	neutral	with which he could sail through the air;
+1364	happiness	it was gorgeously fitted out and of many colours;
+1365	neutral	like the tail of a peacock, it was covered with thousands of eyes, but each eye was the barrel of a gun.
+1366	neutral	The prince sat in the centre of the ship,
+1367	neutral	and had only to touch a spring in order to make thousands of bullets fly out in all directions,
+1368	neutral	while the guns were at once loaded again.
+1370	neutral	The earth was soon left far below, and looked, with its mountains and woods,
+1371	neutral	like a cornfield where the plough had made furrows which separated green meadows;
+1372	neutral	soon it looked only like a map with indistinct lines upon it;
+1373	neutral	and at last it entirely disappeared in mist and clouds.
+1374	neutral	Higher and higher rose the eagles up into the air;
+1375	neutral	then God sent one of his numberless angels against the ship.
+1376	happiness	The wicked prince showered thousands of bullets upon him,
+1377	happiness	but they rebounded from his shining wings and fell down like ordinary hailstones.
+1378	neutral	One drop of blood, one single drop, came out of the white feathers of the angel's wings and fell upon the ship in which the prince sat,
+1379	neutral	burnt into it,
+1380	neutral	and weighed upon it like thousands of hundredweights,
+1381	surprise	dragging it rapidly down to the earth again;
+1382	neutral	the strong wings of the eagles gave way,
+1383	neutral	the wind roared round the prince's head,
+1384	neutral	and the clouds around
+1385	surprise	?were they formed by the smoke rising up from the burnt cities??
+1386	neutral	took strange shapes, like crabs many, many miles long, which stretched their claws out after him,
+1387	neutral	and rose up like enormous rocks, from which rolling masses dashed down, and became fire-spitting dragons.
+1388	neutral	The prince was lying half-dead in his ship,
+1389	neutral	when it sank at last with a terrible shock into the branches of a large tree in the wood.
+1391	neutral	said the prince.
+1393	neutral	And he spent seven years in the construction of wonderful ships to sail through the air,
+1394	neutral	and had darts cast from the hardest steel to break the walls of heaven with.
+1395	neutral	He gathered warriors from all countries, so many that when they were placed side by side they covered the space of several miles.
+1396	happiness	They entered the ships and the prince was approaching his own, when God sent a swarm of gnats one swarm of little gnats.
+1397	happiness	They buzzed round the prince and stung his face and hands;
+1398	anger	angrily he drew his sword and brandished it,
+1399	fear	but he only touched the air and did not hit the gnats.
+1400	anger	Then he ordered his servants to bring costly coverings and wrap him in them, that the gnats might no longer be able to reach him.
+1401	neutral	The servants carried out his orders,
+1402	fear	but one single gnat had placed itself inside one of the coverings,
+1403	fear	crept into the prince's ear and stung him.
+1404	sadness	The place burnt like fire, and the poison entered into his blood.
+1405	sadness	Mad with pain, he tore off the coverings and his clothes too, flinging them far away,
+1406	neutral	and danced about before the eyes of his ferocious soldiers,
+1407	sadness	who now mocked at him, the mad prince, who wished to make war with God, and was overcome by a single little gnat.
+1408	neutral	The Wolf and the Goat
+1409	neutral	A wolf saw a goat grazing at the edge of a high cliff.
+1410	happiness	The wolf smacked his lips at the thought of a fine goat dinner.
+1412	neutral	said the wolf in his sweetest voice,
+1415	neutral	"No, thank you,"
+1416	neutral	said the goat.
+1417	neutral	"Well then,"
+1418	neutral	said the wolf,
+1421	neutral	"No, thank you,"
+1422	neutral	said the goat.
+1423	anger	"But the grass tastes better down here!"
+1424	neutral	said the exasperated wolf,
+1425	anger	"Why dine alone?"
+1427	neutral	the goat finally said,
+

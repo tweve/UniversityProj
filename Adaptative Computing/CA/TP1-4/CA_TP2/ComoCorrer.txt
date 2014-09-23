@@ -1,0 +1,9 @@
+Dentro da pasta CA_TP2 encontram-se diversos ficheiros.mat de entre eles:
+
+treino350 - contém 350 casos de treino efectuados por nós para treino da memória associativa e do cassificador;
+ManualPerfect.m - contém o target definido manualmente por nós como perfeito;
+input.mat - contém um caso de input para teste das redes neuronais implementadas
+main.m - chama a funçao ocr_fun para um caso exemplificativo input.mat (nao se encontra nos casos de treino)
+
+Igor Cruz
+Daniel Frutuoso

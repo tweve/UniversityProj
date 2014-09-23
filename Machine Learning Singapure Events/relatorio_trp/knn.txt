@@ -1,0 +1,9 @@
+
+
+KNN
+
+Knn is a simple classifier. It consists in choosing the class which is more present in the K samples near the pattern to be tested. By that we mean that analysing the features dimensionality we get the K trained samples more similar to the one being tested and choose the class which is more present in that k samples.
+
+After making 5 runs for each number of features with raw data and for each value of K varying from 1 to 7, we easily verify that the best results of F1 score were achieved by K = 2 with 5 features
+Using PCA the results were not so good.
+Its interesting how this simple classifier can achieve one of the best results described along this work.

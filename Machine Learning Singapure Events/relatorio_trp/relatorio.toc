@@ -1,0 +1,24 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Pre-Processing and Feature Extraction}{2}
+\contentsline {section}{\numberline {3}Feature Selection}{3}
+\contentsline {subsection}{\numberline {3.1}Principal Component Analysis (PCA)}{3}
+\contentsline {subsection}{\numberline {3.2}Kruskall-Wallis}{3}
+\contentsline {subsection}{\numberline {3.3}Area under Curve (AUC)}{5}
+\contentsline {section}{\numberline {4}Data Sampling}{6}
+\contentsline {subsection}{\numberline {4.1}Hold-out}{6}
+\contentsline {subsection}{\numberline {4.2}Cross-Validation}{6}
+\contentsline {subsection}{\numberline {4.3}Bootstrap}{6}
+\contentsline {section}{\numberline {5}Classifiers}{7}
+\contentsline {subsection}{\numberline {5.1}Bayes}{7}
+\contentsline {subsection}{\numberline {5.2}Fisher}{8}
+\contentsline {subsection}{\numberline {5.3}k-NN}{9}
+\contentsline {subsection}{\numberline {5.4}SVM}{10}
+\contentsline {section}{\numberline {6}Classifier Performance Metrics}{11}
+\contentsline {subsection}{\numberline {6.1}Accuracy}{11}
+\contentsline {subsection}{\numberline {6.2}F1 Score}{11}
+\contentsline {subsection}{\numberline {6.3}AUC}{11}
+\contentsline {subsection}{\numberline {6.4}Precision}{11}
+\contentsline {subsection}{\numberline {6.5}Recall}{11}
+\contentsline {section}{\numberline {7}Graphical User Interface (GUI)}{12}
+\contentsline {section}{\numberline {8}Conclusion}{13}

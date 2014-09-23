@@ -1,0 +1,47 @@
+[System]
+Name='fis_sugeno'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[-1 1]
+NumMFs=3
+MF1='NEG':'trimf',[-1.8 -1 0]
+MF2='ZERO':'trimf',[-0.8 0 0.8]
+MF3='POS':'trimf',[0 1 1.8]
+
+[Input2]
+Name='input2'
+Range=[-1 1]
+NumMFs=3
+MF1='NEG':'trimf',[-1.8 -1 0]
+MF2='ZERO':'trimf',[-0.8 0 0.8]
+MF3='POS':'trimf',[0 1 1.8]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=3
+MF1='NEG':'linear',[0 0 -1]
+MF2='ZERO':'linear',[0 0 0]
+MF3='POS':'linear',[0 0 1]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 2 (1) : 1
+2 1, 1 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 3 (1) : 1

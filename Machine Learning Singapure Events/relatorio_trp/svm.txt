@@ -1,0 +1,17 @@
+SVM
+
+Support Vector machines are machine learning algorithms that pretend to answer the question "What is the best separation hiperplane between the two classes?"
+It calculates the hiperplane with the highest margin of separation between classes.
+SVM algorithms base idea is to perform the empirical risk minimization, but not forgetting the structure. This allows the such classifiers not to overfit like the classical neural networks since they are aware of the structure.
+
+
+For SVM we used the rbf kernel.
+We made the parameters vary along the window presented above. For each value of these parameters we built a new training set and testing set and tested svm classifiers.
+After 5 runs we calculate the averages of the errors and build the upper image in which we can see that the best parameters are near the center of it. We cant see by the colours, but the best values were 1,4.
+
+
+
+So after knowing that the best parameters for SVM were (1,4), we built that classifier with 80% training, 20% testing and got the results above for raw data and PCA features.
+In the raw data plot we can see that the results achieved with the SVM classifier were the best results of this work. The F1 varied from 0.91 to 0.92 and the accuracy was in average 0.88 to 0.89. The optimal number of features was 6.
+Using PCA the results were not as good as with the raw data and the optimal number of features was 4.
+

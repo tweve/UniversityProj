@@ -1,0 +1,10 @@
+Bayes Classifier
+
+
+Bayes classifiers are probabilistic classifiers based on the Bayes' theorem. 
+We used the Maximal Likelihood estimation of Gaussian mixture model for implementing the Bayes classifier. This classifier minimizes the Bayesian risk of loss. The input vectors X are classified.into classes with the highest a posterior probabilities computed from given model.
+
+We made 5 runs of the Bayes classifier. We also tested all the amount of features that we extracted. The best results for raw data occurred for 5 features, giving us F1 slightly higher than 0.9 and accuracy around 0.85.
+As we can see, less than 5 features was not as good because the information present was not enough to correctly predict so many features. Adding more features is also not good because the classifier loses the capacity to generalize knowledge.
+In the PCA the results were slightly lower than with the raw data. However the almost as accurate as the ones achieved with the raw data classifier.
+
